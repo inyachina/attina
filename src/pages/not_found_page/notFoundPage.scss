@@ -1,0 +1,21 @@
+@import "../../assets/styles/variable";
+
+#not_found_page {
+  justify-content: center;
+  height: 90vh;
+
+  .error {
+    align-items: center;
+  }
+
+  .gif_container {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  .gif {
+    width: 60rem;
+    top: -20rem;
+    left: -10rem;
+  }
+}

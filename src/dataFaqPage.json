@@ -1,0 +1,50 @@
+{
+  "categories": [
+    {
+      "name": "Claim"
+    },
+    {
+      "name": "Insurance 101"
+    },
+    {
+      "name": "Policy"
+    }
+  ],
+  "questions": [
+    {
+      "category": "Claim",
+      "question": "What is the internet income insurance?",
+      "answer": "More and more people choose an independent way of earning money in social media and in crypto. They need a flexible and easy way to protect their income and their account from rising cyber threats, scams and blocking, so we're creating a new category of income insurance for self-employed people!<br/><br/>We're calling it 'Internet income Insurance' because it's intended to protect your internet income, so you maintain your lifestyle in cerenity and peace."
+    },
+    {
+      "category": "Claim",
+      "question": "How does income insurance work?",
+      "answer": "Income insurance pays a benefit that replaces a portion of your income if something happens to your account or you that interferes with your usual activities. You just report the incident or your feeling unwell in any way, we check the information and make the payment directly to your card. <br/><br/>This usually happens on the day of the application without paperwork struggle, the process is fully digital."
+    },
+    {
+      "category": "Claim",
+      "question": "How much does insurance cost?",
+      "answer": "Income insurance policy costs vary based on many factors like (but not limited to) health risk, age, benefit amount, elimination period, benefit period, or policy term. At Asteya, we have a variety of options to fit your budget."
+    },
+    {
+      "category": "Claim",
+      "question": "When should i buy income insurance?",
+      "answer": "Income insurance is for anyone who wants a safety net of financial security. However, certain factors can increase your need for income insurance and may be necessary if you:<li>Do not have sick or annual leave because you are self-employed or a small business owner.</li><li>Have family members or dependents who rely on your income.</li><li>Have debt that requires weekly, monthly, or annual payments even if you can't work.</li><br/>The earlier you jump on the income insurance train, the faster you are on track to financial security! If you are young and healthy now, then qualifying for a policy is easier and the premiums are much lower -- no reason to wait!"
+    },
+    {
+      "category": "Policy",
+      "question": "What is the internet income insurance?",
+      "answer": "More and more people choose an independent way of earning money in social media and in crypto. They need a flexible and easy way to protect their income and their account from rising cyber threats, scams and blocking, so we're creating a new category of income insurance for self-employed people!<br/><br/>We're calling it 'Internet income Insurance' because it's intended to protect your internet income, so you maintain your lifestyle in cerenity and peace."
+    },
+    {
+      "category": "Claim",
+      "question": "What",
+      "answer": "More"
+    },
+    {
+      "category": "Claim",
+      "question": "What",
+      "answer": "More"
+    }
+  ]
+}

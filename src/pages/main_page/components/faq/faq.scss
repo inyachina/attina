@@ -1,0 +1,62 @@
+@import "../../../../assets/styles/variable";
+
+#faq {
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5rem;
+  background: $sub_accent_color;
+  border-radius: 30px;
+  gap: 2.5rem;
+
+  img {
+    width: 10rem;
+    height: 2.2rem;
+  }
+
+  .questions {
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
+.question {
+  background: $sub_die_color;
+  padding: 0 2rem;
+  height: 5.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  position: absolute;
+
+
+  .q {
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      top: 2rem;
+      font-size: 1rem;
+    }
+
+    .expand_btn {
+      position: relative;
+      background: $accent_color;
+      border-radius: 30px;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    .arrow {
+      max-width: 0.8rem;
+      max-height: 0.8rem;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  .a {
+    opacity: 0;
+    color: $accent_color;
+
+  }
+}

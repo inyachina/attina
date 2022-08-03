@@ -1,0 +1,127 @@
+{
+  "Links": {
+    "inst": "",
+    "tiktok": "",
+    "youtube": "",
+    "twitter": "",
+    "metamask": ""
+  },
+  "Intro": {
+    "content": "Get protection from 10$ per month for your earnings from any digital platform and crypto hustle with instant payouts and no hidden fees.",
+    "button": "Get protection"
+  },
+  "FirstBlock": {
+    "content": "First digital income insurance ever. It's like your second income, in case of unforeseen problems, blocking, account hacking, illness or other troubles."
+  },
+  "SecondBlock": {
+    "facts": [
+      {
+        "stat": "2/3",
+        "text": "U.S. adults have had instagram accounts hacked"
+      },
+      {
+        "stat": "30",
+        "text": "Per year occur on corporate social media"
+      },
+      {
+        "stat": "95%",
+        "text": " Don’t trust social media platforms to protect their data"
+      }
+    ]
+  },
+  "ThirdBlock": {
+    "options": [
+      {
+        "text": "Multi-platform support. Insure any social media or crypto wallet."
+      },
+      {
+        "text": "Clear, fair prices. No hidden fees. What you see is what you get."
+      },
+      {
+        "text": "Protected in minutes. A faff-free process without the baffling questions."
+      },
+      {
+        "text": "Fully digital. Our Dashboard makes it easier than ever to manage your insurances."
+      }
+    ]
+  },
+  "FourthBlock": {
+    "subTitle": "But their losses from fraudsters, work interruptions and accidents reach colossal proportions. Therefore, there is we — an online subscription to peace."
+  },
+  "FifthBlock": {
+    "options": [
+      {
+        "text": "A few details. A few of questions about your account is all we need. We promise not to ask anything about your income and personal data."
+      },
+      {
+        "text": "Tweak your cover. Choose coverage level of your income in one click."
+      },
+      {
+        "text": "Relax. You’re covered. Our 24/7 support team fix and pay for any issue and share all cybersecurity."
+      }
+    ]
+  },
+  "SixthBlock": {
+    "title": "We insure against various cases",
+    "content": [
+      {
+        "title": "Hacking  and data theft",
+        "text": "Cover your account from 3rd parties (access)."
+      },{
+        "title": "Hacking  and data theft",
+        "text": "Cover your account from 3rd parties (access)."
+      },
+      {
+        "title": "Hacking  and data theft",
+        "text": "Cover your account from 3rd parties (access)."
+      },
+      {
+        "title": "Block & Ban",
+        "text": "Cover any losses from outage in account work. "
+      }
+    ]
+  },
+  "SevenBlock": {
+    "content": "Everyone deserves the opportunity to protect their quality of life and their future, which is why we made our insurance so that everyone can buy it in two clicks and for the price of a salad bowl."
+  },
+  "BudgetBlock": {
+    "subTitle": "Everyone deserves the opportunity to protect their quality of life and their future, which is why we made our insurance so that everyone can buy.",
+    "chooseLabel": "Choose the value of your bike to get an idea of your monthly share",
+    "values": [
+      {
+        "amount": "1000$",
+        "perMonth": "12$",
+        "perYear": "120$"
+      },
+      {
+        "amount": "3000$",
+        "perMonth": "3$",
+        "perYear": "3$"
+      },
+      {
+        "amount": "5000$",
+        "perMonth": "5$",
+        "perYear": "5$"
+      }
+    ],
+    "endSubTitle": "You can change your choice any time"
+  },
+  "Faq": [
+    {
+      "question": "What is the internet income insurance?",
+      "answer": "aaaaaa"
+    },{
+      "question": "How does income insurance work?",
+      "answer": "aaaaaa"
+    },{
+      "question": "How much does insurance cost?",
+      "answer": "aaaaaa"
+    },{
+      "question": "When should i buy income insurance?",
+      "answer": "aaaaaa"
+    },{
+      "question": "Is it okay to buy cheap income insurance?",
+      "answer": "aaaaaa"
+    }
+  ]
+}

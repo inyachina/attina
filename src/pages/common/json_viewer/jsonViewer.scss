@@ -1,0 +1,13 @@
+.json_container__relative {
+  position: relative;
+  //background: rgba(1, 1, 255, 0.5);
+}
+
+.json_container__absolute {
+  position: absolute;
+  width: 160%;
+  top: -5em;
+  left: -30%;
+  //background: rgba(1, 255, 1, 0.5);
+  pointer-events: none;
+}

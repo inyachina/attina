@@ -1,0 +1,46 @@
+{
+  "FirstBlock": {
+    "content": "We all don’t like to talk about bad things, we got it. But the reality is that 1 of 4 social media account \nstopped working or lost an audience due to hacking.",
+    "text1": "Our mission is to bring more care through honest, fair financing. We are here to reduce stress during difficult times and enjoy financial security. ",
+    "text2": "Our insurance pays a proportion of your lost earnings to help you pay for your lifestyle, traveling, food, enabling you to focus on what really matters. "
+  },
+  "SecondBlock": [
+    {
+      "title": "Apply for a digital income insurance from Attina",
+      "content": "Unlike most insurance providers, we don't require any documents or other stuff. You just share a link to your account and choose the total amount of monthly coverage. Simple and fair."
+    },
+    {
+      "title": "Start your coverage and do what you do best",
+      "content": "Once your policy is in place, you're all set! We’ll not let your income drop and our experts will make sure that you get as much useful information as possible about protecting your digital assets and accessing to it."
+    },
+    {
+      "title": "Make a hassle-free claim and get refund instantly ",
+      "content": "We hope that you’ll never need to do this, but if the unexpected should happen and you need to make a claim. After we approve your claim, you'll receive a payout that you can use for whatever you need."
+    }
+  ],
+  "ThirdBlock": "Insuring your income is the most practical thing you can do to empower your future.",
+  "FourthBlock": "Our founder has been presenting cybersecurity and data protection for 10 years. He always knows as many people as possible.",
+  "FifthBlock": "Our founder has been presenting cybersecurity and data protection for 10 years. He always knows as many people as possible. Our founder has been presenting cybersecurity and data protection for 10 years. He always knows as many people as possible.",
+  "SixthBlock": {
+    "title": "Our Customer Values",
+    "subtitle": "We have set ourselves a number of values which help guide everyone in our team in how they should make decisions. ",
+    "content": [
+      {
+        "title": "Continuous Learning",
+        "text": "Cyber literacy and cyber hygiene are the skills that we constantly develop in our clients. It's like healthy eating: you have to constantly learn these skills in yourself."
+      },
+      {
+        "title": "Customer First",
+        "text": "We will only build things that make our customers' lives better. We'll always talk to our community of customers to stay on top of what that is."
+      },
+      {
+        "title": "Customer First",
+        "text": "We will only build things that make our customers' lives better. We'll always talk to our community of customers to stay on top of what that is."
+      },
+      {
+        "title": "Customer First",
+        "text": "We will only build things that make our customers' lives better. We'll always talk to our community of customers to stay on top of what that is."
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../assets/styles/variable";
+
+#faq_page {
+  align-items: center;
+
+  .buttons {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .filter_button {
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  .filter_button input[type=radio] {
+    display: none;
+  }
+
+  .filter_button label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border: 3px solid $dark_text;
+    border-radius: 2.5rem;
+    user-select: none;
+  }
+
+  .filter_button input[type=radio]:checked + label {
+    background: $dark_text;
+    color: $bg_color;
+    pointer-events: none;
+  }
+
+  .filter_button label:hover {
+    //background-color: $sub_accent_color;
+    background-color: $accent_color;
+    border-color: $accent_color;
+    color: $light_text;
+  }
+
+  .question_container {
+    gap: 2rem;
+  }
+
+  .arrow_text {
+    gap: 0.5rem;
+    cursor: pointer;
+    .arrow {
+      height: 2.5rem;
+    }
+  }
+
+  #help_block {
+    width: 100%;
+    max-height: $max_height;
+    margin: auto auto 2rem;
+
+    .left_block {
+      border-radius: 30px;
+      background: $sub_accent_color;
+      height: 40vh;
+      gap: 2.5rem;
+      align-items: center;
+      padding: 8.5rem 7rem;
+    }
+
+    div {
+      color: $accent_color;
+      text-align: center;
+    }
+  }
+}
+
+.question_block {
+  background: $accent_color;
+  border-radius: 1.5rem;
+  gap: 1rem;
+  padding: 3.5rem 5rem;
+
+  .q {
+    color: $light_text;
+  }
+
+  .a {
+    font-weight: lighter;
+    color: $light_text;
+    max-width: 80%;
+    li{
+      color: $light_text;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.left_block {
+  background: $sub_accent_color;
+  height: 90vh;
+  max-height: $max_height;
+  border-radius: 30px;
+  justify-content: center;
+}
