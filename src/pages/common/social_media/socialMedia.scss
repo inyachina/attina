@@ -1,0 +1,16 @@
+@import "src/assets/styles/variable";
+
+.social_media {
+  background: $accent_color;
+  height: 2.3rem;
+  width: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}

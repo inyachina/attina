@@ -1,34 +1,32 @@
 @import "../../../assets/styles/variable";
 
 #budget {
-  height: 90vh;
+  height: 38rem;
   max-height: $max_height;
+  gap: 2rem;
 
-  .info {
+  .info_desktop {
     height: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-
-    img {
-      width: 5rem;
-      height: 5rem;
-    }
-
-    .title {
-      text-align: center;
-    }
+    background: $sub_accent_color;
+    border-radius: 30px;
 
     .sub_title {
       text-align: center;
       max-width: 75%;
+      color: $accent_color;
+      margin-bottom: 2rem;
+    }
+
+    .t3 {
+      color: $accent_color;
+      text-align: start;
     }
   }
 
   .budget_calculator {
     background: $accent_color;
     border-radius: 30px;
-    padding: 0 7rem;
+    padding: 0 6rem;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -36,14 +34,21 @@
     .title {
       color: $light_text;
       text-align: center;
+      font-weight: normal;
     }
 
     .buttons {
-      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      display: grid;
+      width: 100%;
+      grid-template-columns: 30% 30% 30%;
+      gap: 5%;
+      position: relative;
 
       .budget_button {
         display: inline-block;
         font-size: 1rem;
+        min-width: 100%;
       }
 
       .budget_button input[type=radio] {
@@ -53,17 +58,24 @@
       .budget_button label {
         color: $light_text;
         display: inline-block;
+        text-align: center;
         cursor: pointer;
-        padding: 0.75rem 1.5rem;
+        min-width: 100%;
+        padding: 0.75rem 0;
         border: 2px solid $die_color;
-        border-radius: 2.5rem;
+        background: transparent;
+        border-radius: 30px;
         user-select: none;
-        transition: 0.2s ease-in-out;
+        transition: 0.1s ease-in-out;
       }
 
       .budget_button input[type=radio]:checked + label {
-        border: 2px solid $light_text;
+        background: $die_color;
         pointer-events: none;
+      }
+
+      .budget_button input[type=radio]:hover + label {
+        background: #A750E3;
       }
     }
 
@@ -77,12 +89,20 @@
         .number {
           text-align: center;
           color: $light_text;
-        }
+          font-size: 2.5rem;
 
-        .per {
-          text-align: center;
-          color: $light_text;
+          .per {
+            font-size: 0.9rem;
+            color: $comment_color;
+            font-weight: 500;
+          }
         }
+      }
+
+      .first_month {
+        margin-top: 1.5rem;
+        text-align: center;
+        color: $light_text;
       }
 
       .pipe {
@@ -94,6 +114,7 @@
     }
 
     button {
+      margin-top: 3rem;
       width: 12rem;
       height: 3.5rem;
       background: $light_text;
@@ -106,6 +127,100 @@
     .sub_title {
       color: $die_color;
       text-align: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #budget {
+    margin-top: 7.5rem;
+    height: auto;
+    max-height: initial;
+    gap: 2rem;
+    display: flex !important;
+    flex-direction: column;
+
+    img {
+      height: 2.6rem;
+    }
+
+    .t3 {
+      text-align: center;
+      max-width: 90%;
+      margin: 2.6rem 0 2rem 0;
+    }
+
+    .info_mobile {
+      margin-top: 2.6rem;
+      height: auto;
+      border-radius: 30px;
+
+
+      .options {
+        width: 100%;
+        gap: 0.7rem;
+
+        .option {
+          border-radius: 15px;
+          background: $sub_accent_color;
+          align-items: center;
+          padding: 1rem 0.7rem;
+
+          img {
+            margin-right: 0.7rem;
+          }
+        }
+      }
+
+
+    }
+
+    .budget_calculator {
+      border-radius: 15px;
+      padding: 3rem 1.6rem;
+
+      .buttons {
+        margin-bottom: 0;
+
+
+        .budget_button label {
+          border-radius: 15px;
+          padding: 0.75rem 0;
+        }
+      }
+
+      .price {
+        gap: 1rem;
+        width: 100%;
+
+        .text {
+          background: #A750E3;
+          border-radius: 15px;
+          width: 100%;
+          padding: 1rem 0;
+          gap: 0.5rem;
+          .number {
+            font-size: 2rem;
+            letter-spacing: -0.02em;
+            font-weight: normal;
+          }
+        }
+
+        .first_month {
+          margin: 0 0 0 0.5rem;
+          font-size: 0.9rem;
+          color: $comment_color;
+          font-weight: 500;
+        }
+      }
+
+      .pipe{
+        display: none;
+      }
+
+      .sub_title {
+        color: $comment_color;
+      }
     }
   }
 }

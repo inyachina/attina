@@ -1,9 +1,12 @@
 import React, {useEffect, useRef, useState} from "react";
 import './budget.scss';
 import data from "../../../dataMainPage.json";
-import logo from '../../../assets/img/logo.svg'
+import tick from "../../../assets/img/budget_tick.svg"
+import mobile_tick from "../../../assets/img/tick.svg"
+import logo from "../../../assets/img/logo.svg";
+import {MobileButton} from "../mobile_button/MobileButton";
 
-export const Budget = () => {
+export const Budget = ({withoutText}) => {
     const [perMonth, setPerMonth] = useState()
     const [perYear, setPerYear] = useState()
     const checkedIndex = useRef();
@@ -28,18 +31,40 @@ export const Budget = () => {
 
     return (
         <div id="budget" className="grid_container__halved">
-            <div className="info flex_container__column">
-                <img src={logo}/>
-                <div className="t2 title">
-                    Our product <br/>
-                    is available<br/>
-                    to any budget <br/>
-                    or lifestyle<br/>
+            {withoutText ??
+            <>
+                <div className="info_desktop desktop container__centered flex_container__column">
+                    <div className="sub_title">
+                        Unlike other outdated insurers, you choose the amount of coverage according to your
+                        income. <br/>Yep,
+                        It’s that easy.
+                    </div>
+                    <div className="flex_container__column gap-1rem">
+                        {data.BudgetBlock.options.map((option) =>
+                            <div className="option flex_container gap-1rem">
+                                <img src={tick}/>
+                                <div className="t3">{option}</div>
+                            </div>
+                        )}
+                    </div>
                 </div>
-                <div className="sub_title">
-                    {data.BudgetBlock.subTitle}
+                <div className="info_mobile mobile container__centered flex_container__column">
+                    <img src={logo}/>
+                    <div className="t3">
+                        Unlike other outdated insurers, you choose the amount of coverage according to your
+                        income. Yep, It’s that easy.
+                    </div>
+                    <div className="options flex_container__column">
+                        {data.BudgetBlock.options.map((option) =>
+                            <div className="option flex_container">
+                                <img src={mobile_tick}/>
+                                <div>{option}</div>
+                            </div>
+                        )}
+                    </div>
                 </div>
-            </div>
+            </>
+            }
             <div className="budget_calculator flex_container__column">
                 <div className="title">{data.BudgetBlock.chooseLabel}</div>
                 <div className="buttons flex_container">
@@ -62,24 +87,35 @@ export const Budget = () => {
                 </div>
                 <div className="price">
                     <div id="perMonth" className="text flex_container__column">
-                        <div id={"perMonth"} className="t2 number">{perMonth}</div>
-                        <div className="per">per month</div>
+                        <div id={"perMonth"} className="number">
+                            {perMonth}
+                            <span className="per">/month</span>
+                        </div>
+                        <div className="first_month">
+                            +first month free
+                        </div>
                     </div>
                     <div className="pipe"/>
                     <div id="perYear" className="text flex_container__column">
-                        <div id={"perYear"} className="t2 number">{perYear}</div>
-                        <div className="per">
-                            per year<br/>
+                        <div id={"perYear"} className="number">
+                            {perYear}
+                            <span className="per">/year</span>
+                        </div>
+                        <div className="first_month">
                             +first month free
                         </div>
                     </div>
                 </div>
-                <button>
+                <button className="desktop">
                     Get protection
                 </button>
+                {/*<div className="get_protection_container">*/}
+                    <MobileButton text={"Get protection"}/>
+                {/*</div>*/}
                 <div className="sub_title">
                     {data.BudgetBlock.endSubTitle}
                 </div>
             </div>
-        </div>)
+        </div>
+    )
 }

@@ -3,33 +3,31 @@
 #header {
   max-width: $max-width;
   width: $width;
-  margin: auto;
+  padding: 0 12.5vw;
   gap: 1rem;
+  background: rgba(248, 239, 255, 0.8);
   top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
+  //position: fixed;
+  transition: top 0.3s;
+  z-index: 10000;
 
-  .report_point {
-    background: $accent_color;
-    border-radius: 1.5rem;
-    margin-right: 0.5rem;
-  }
-
-  div button {
-    background: transparent;
+  button {
     border: 2px solid $accent_color;
     border-radius: 116px;
+    padding: 0.5rem 0;
+    width: 8.5rem;
   }
 
-  .report_point {
-    width: 1rem;
-    height: 1rem;
+  .claim{
+    background: transparent;
   }
-
-  div button {
-    height: 2.2rem;
-    width: 6rem;
+  .get_started{
+    background: $accent_color;
+    color: $bg_color;
+    font-weight: lighter;
   }
 }

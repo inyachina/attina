@@ -1,0 +1,21 @@
+@import "src/assets/styles/variable";
+
+.mobile_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg_color;
+  height: 3rem;
+  border-radius: 15px;
+  color: $accent_color;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  img {
+    max-height: 1.1rem;
+    max-width: 1.1rem;
+    margin-right: 0.5rem;
+  }
+
+}

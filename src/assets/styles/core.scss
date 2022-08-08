@@ -1,5 +1,5 @@
 @import "variable";
-
+@import "adaptive";
 //titles
 .t1 {
   font-family: 'Nanum Myeongjo';
@@ -31,6 +31,10 @@
   white-space: nowrap;
 }
 
+.gap-1rem {
+  gap: 1rem;
+}
+
 .gap-2rem {
   gap: 2rem;
 }
@@ -44,6 +48,13 @@
   gap: 2rem;
 }
 
+@media (max-width: 800px) {
+  .main_container{
+    max-width: initial;
+    width: auto;
+    padding: 0 0.5rem;
+  }
+}
 .main_margin_top {
   margin-top: 5rem;
 }

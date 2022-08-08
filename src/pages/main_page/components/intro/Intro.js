@@ -1,12 +1,9 @@
 import React from "react";
 import './intro.scss';
-import inst from '../../../../assets/img/inst.svg'
-import tiktok from '../../../../assets/img/tiktok.svg'
-import twitter from '../../../../assets/img/twitter.svg'
-import youtube from '../../../../assets/img/youtube.svg'
-import metamask from '../../../../assets/img/metamask.svg'
 import girlGif from '../../../../assets/img/gifs/Working_girl.json'
+import arrow from '../../../../assets/img/arrowBottom.svg'
 import {JsonViewer} from "../../../common/json_viewer/JsonViewer";
+import {SocialMedia} from "../../../common/social_media/SocialMedia";
 
 export const Intro = (props) => {
     return (
@@ -16,21 +13,26 @@ export const Intro = (props) => {
                     Your income is your
                     freedom, protect it.
                 </div>
-                <div className="st1 content">
-                    {props.data.content}
-                </div>
-                <div className="links flex_container">
-                    <a><img src={inst}/></a>
-                    <a><img src={tiktok}/></a>
-                    <a><img src={twitter}/></a>
-                    <a><img src={youtube}/></a>
-                    <a><img src={metamask}/></a>
+                <div className="mobile_reverse_column">
+                    <div className="st1 content">
+                        {props.data.content}
+                    </div>
+                    <div className="links flex_container">
+                        <SocialMedia media="inst"/>
+                        <SocialMedia media="tiktok"/>
+                        <SocialMedia media="twitter"/>
+                        <SocialMedia media="youtube"/>
+                    </div>
                 </div>
                 <button className="st1">
+                    <img className="intro_arrow" src={arrow}/>
                     {props.data.button}
                 </button>
             </div>
-                <JsonViewer src={girlGif} mirrored nondiv/>
+            <div className="intro_json">
+                <JsonViewer
+                    src={girlGif} mirrored/>
+            </div>
         </div>
-    )
+)
 }

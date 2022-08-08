@@ -15,11 +15,9 @@
     color: $light_text;
   }
 
-  .learn_more {
-    img {
-      cursor: pointer;
-      height: 2.5rem;
-    }
+  img {
+    cursor: pointer;
+    height: 2.5rem;
   }
 }
 
@@ -33,22 +31,21 @@
 
   .facts {
     gap: 2rem;
-    height: 22rem;
     justify-content: center;
 
     .fact {
-      background: #EED7FF;
+      background: $sub_accent_color;
       border-radius: 30px;
       width: 33%;
-      height: 100%;
-      padding: 0 2.9rem;
+      padding: 0 2rem;
+      height: 22rem;
       justify-content: center;
 
       .stat {
         font-family: 'Nanum Myeongjo';
         font-style: normal;
         font-weight: 400;
-        font-size: 7rem;
+        font-size: 5.5rem;
         line-height: 7.5rem;
         text-align: center;
         letter-spacing: -0.02em;
@@ -96,9 +93,11 @@
       background: $die_color;
       border-radius: 30px;
       padding: 1rem 2.2rem;
-      img{
+
+      img {
         height: 3rem;
       }
+
       .links {
         margin-top: 0.9rem;
         gap: 0.75rem;
@@ -113,6 +112,13 @@
         max-width: 75%;
         font-weight: 400;
         font-size: 1rem;
+
+        b {
+          color: $light_text;
+          font-weight: bolder;
+          line-height: 80%;
+          font-size: 0.8rem;
+        }
       }
 
     }
@@ -133,10 +139,16 @@
       max-width: 60%;
     }
   }
+
+  .man_gif {
+    //background: #BC6CF3;
+    margin-top: 5rem;
+    width: 80%;
+  }
 }
 
 .fifth_block {
-  height: 90vh;
+  min-height: 90vh;
   max-height: $max_height;
   padding: 0 7rem;
   background: $sub_accent_color;
@@ -167,7 +179,7 @@
         min-width: 2.5rem;
         min-height: 2.5rem;
         border-radius: 30px;
-        background-color: $accent_color;
+        background-color: $die_color;
         display: flex;
         position: relative;
 
@@ -180,6 +192,11 @@
         font-size: 0.9rem;
         line-height: 125%;
         max-width: 85%;
+
+        b {
+          font-size: 0.8rem;
+          font-weight: bolder;
+        }
       }
     }
 
@@ -212,44 +229,5 @@
   img {
     cursor: pointer;
     width: 10rem;
-  }
-}
-
-
-@media(max-width: 1600px) {
-  .third_block {
-
-    info {
-      .sub_title {
-        font-size: 0.8rem;
-      }
-    }
-
-    .options {
-      .option {
-        .text {
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
-  .fifth_block {
-    .info {
-      gap: 1rem;
-
-      .title {
-        font-size: 3.6rem;
-      }
-
-      .option {
-        .text {
-          font-size: 0.8rem;
-        }
-      }
-    }
-
-    .phone_img {
-      height: 32rem;
-    }
   }
 }

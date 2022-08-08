@@ -9,6 +9,9 @@ export const Header = () => {
                 <img height="50px" src={logo}/>
             </a>
             <div className="flex_container gap-2rem">
+                <a href="/">
+                    Home
+                </a>
                 <a href="/about">
                     About
                 </a>
@@ -16,12 +19,9 @@ export const Header = () => {
                     FAQ
                 </a>
             </div>
-            <div className="flex_container gap-2rem">
-                <div className="flex_container">
-                    <div className="report_point"/>
-                    <div>Claim</div>
-                </div>
-                <button>Get started</button>
+            <div className="flex_container gap-1rem">
+                <button className="claim">Claim</button>
+                <button className="get_started">Get started</button>
             </div>
         </div>
     )

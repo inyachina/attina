@@ -1,23 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
 import './fixedblock.scss';
-
+import f from '../../../assets/img/white_cover_icon_1.png'
 export const FixedLeftBlock = (props) => {
     const isLightTheme = props.lightTheme;
-    useEffect(() => {
-        // const amount = props.data.content.length;
-        // const duration = 2 * (amount-1) + amount;
-        // console.log(duration)
-        //
-        // ScrollMagicPluginGsap(ScrollMagic, gsap);
-        // const controller = new ScrollMagic.Controller()
-        // const scene = new ScrollMagic.Scene({
-        //     triggerElement: "#fixed_block",
-        //     triggerHook: "onLeave",
-        //     duration: 300,
-        // })
-        //     .setPin("#fixed_block")
-        //     .addTo(controller);
-    })
 
     return (
         <div id="fixed_left_block"
@@ -40,7 +25,9 @@ export const FixedLeftBlock = (props) => {
                 {props.data.content.map((item) => (
                     <div className="sub_block">
                         <div className={"content flex_container__column"}>
-                            <div className="circle"/>
+                            <div className="circle container__centered">
+                                <img src={require(`../../../assets/img/${item.img}`)}/>
+                            </div>
                             <div className="title">
                                 {item.title}
                             </div>

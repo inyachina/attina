@@ -2,6 +2,7 @@ import React from "react";
 import arrowMoreAnswers from '../../../../assets/img/arrowMoreAnswers.svg'
 import {Question} from "./Question";
 import './faq.scss'
+import {MobileButton} from "../../../common/mobile_button/MobileButton";
 
 export const Faq = (props) => {
     return (
@@ -14,9 +15,10 @@ export const Faq = (props) => {
                     <Question index={index} data={item}/>
                 ))}
             </div>
-            <a href="/faq">
+            <a className="desktop" href="/faq">
                 <img src={arrowMoreAnswers}/>
             </a>
+            <MobileButton text="More answers"/>
         </div>
     )
 }

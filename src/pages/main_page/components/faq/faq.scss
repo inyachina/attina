@@ -42,9 +42,9 @@
     .expand_btn {
       position: relative;
       background: $accent_color;
-      border-radius: 30px;
-      width: 2.2rem;
-      height: 2.2rem;
+      border-radius: 50%;
+      min-width: 2.2rem;
+      min-height: 2.2rem;
     }
 
     .arrow {
@@ -58,5 +58,39 @@
     opacity: 0;
     color: $accent_color;
 
+  }
+}
+
+@media (max-width: 800px) {
+  #faq {
+    padding: 2.6rem 2rem;
+    background: $sub_accent_color;
+    border-radius: 15px;
+    gap: 2.5rem;
+
+    .questions {
+      gap: 0.7rem;
+    }
+  }
+
+  .question {
+    padding: 0 1rem;
+    border-radius: 15px;
+
+    .q {
+      .text {
+        max-width: 85%;
+      }
+
+      .expand_btn {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      .arrow {
+        max-width: 0.6rem;
+        max-height: 0.6rem;
+      }
+    }
   }
 }

@@ -7,11 +7,11 @@
     "metamask": ""
   },
   "Intro": {
-    "content": "Get protection from 10$ per month for your earnings from any digital platform and crypto hustle with instant payouts and no hidden fees.",
-    "button": "Get protection"
+    "content": "Finally, fair insurance for internet income. Get protection for your earnings from social media and crypto hustle with instant payouts and no hidden fees.",
+    "button": "Get started"
   },
   "FirstBlock": {
-    "content": "First digital income insurance ever. It's like your second income, in case of unforeseen problems, blocking, account hacking, illness or other troubles."
+    "content": "It's like your second income in case of troubles with your account, blocking, hacking or banning, reputation risks, phone theft or health problems."
   },
   "SecondBlock": {
     "facts": [
@@ -20,88 +20,118 @@
         "text": "U.S. adults have had instagram accounts hacked"
       },
       {
-        "stat": "30",
-        "text": "Per year occur on corporate social media"
+        "large_text": "true",
+        "stat": "$14 bln",
+        "text": "Criminals have earned in the cryptocurrency market in 2021"
       },
       {
-        "stat": "95%",
-        "text": " Don’t trust social media platforms to protect their data"
+        "stat": "30",
+        "text": "Per year attack occur on each corporate social media"
       }
     ]
   },
   "ThirdBlock": {
     "options": [
       {
-        "text": "Multi-platform support. Insure any social media or crypto wallet."
+        "bold_text": "Multi-platform support.",
+        "text": "Insure any social media or crypto wallet."
       },
       {
-        "text": "Clear, fair prices. No hidden fees. What you see is what you get."
+        "bold_text": "Clear, fair prices.",
+        "text": "No hidden fees. What you see is what you get."
       },
       {
-        "text": "Protected in minutes. A faff-free process without the baffling questions."
+        "bold_text": "Protected in minutes.",
+        "text": "A faff-free process without the baffling questions."
       },
       {
+        "bold_text": "Fully digital.",
         "text": "Fully digital. Our Dashboard makes it easier than ever to manage your insurances."
       }
     ]
   },
   "FourthBlock": {
-    "subTitle": "But their losses from fraudsters, work interruptions and accidents reach colossal proportions. Therefore, there is we — an online subscription to peace."
+    "subTitle": "From a collection of memories to content that generates income for you, we are here to protect your any digital assets."
   },
   "FifthBlock": {
     "options": [
       {
-        "text": "A few details. A few of questions about your account is all we need. We promise not to ask anything about your income and personal data."
+        "bold_text": "A few details.",
+        "text": " A couple of questions is all we need. We promise not to ask anything sensitive about your income or personal data.\n"
       },
       {
-        "text": "Tweak your cover. Choose coverage level of your income in one click."
+        "bold_text": "Tweak your cover.",
+        "text": "Tweak your cover. Choose coverage level of your monthly income in one click."
       },
       {
-        "text": "Relax. You’re covered. Our 24/7 support team fix and pay for any issue and share all cybersecurity."
+        "bold_text": "Relax. You’re covered.",
+        "text": "Our support team is always ready to provide useful advice or help to make a claim."
       }
     ]
   },
   "SixthBlock": {
-    "title": "We insure against various cases",
+    "title": "What we cover",
     "content": [
       {
+        "img": "white_cover_icon_1.png",
         "title": "Hacking  and data theft",
-        "text": "Cover your account from 3rd parties (access)."
-      },{
-        "title": "Hacking  and data theft",
-        "text": "Cover your account from 3rd parties (access)."
+        "text": "Cover your account from 3rd parties access."
       },
       {
+        "img": "white_cover_icon_2.png",
         "title": "Hacking  and data theft",
-        "text": "Cover your account from 3rd parties (access)."
+        "text": "Сover any losses from outage in account work."
       },
       {
-        "title": "Block & Ban",
-        "text": "Cover any losses from outage in account work. "
+        "img": "white_cover_icon_3.png",
+        "title": "Reputational lawsuits",
+        "text": "Negatives can react to your posts by claiming you’ve stolen their ideas,  disparaged or defamed them or their business or products."
+      },
+      {
+        "img": "white_cover_icon_4.png",
+        "title": "Social engineering & fraud",
+        "text": "Cover any money scams from your account."
+      },
+      {
+        "img": "white_cover_icon_5.png",
+        "title": "Content or Device Insurance",
+        "text": "Instant payout to cover damage, loss or theft of your content or your phone."
+      },
+      {
+        "img": "white_cover_icon_6.png",
+        "title": "Sick or Injured",
+        "text": "Simple and honest sick pay without doctors and waitings."
       }
     ]
   },
   "SevenBlock": {
-    "content": "Everyone deserves the opportunity to protect their quality of life and their future, which is why we made our insurance so that everyone can buy it in two clicks and for the price of a salad bowl."
+    "content": "Everyone deserves the opportunity to protect their quality of life and their future, which is why we made our insurance so that everyone can buy it in two clicks for the price of a launch."
   },
   "BudgetBlock": {
-    "subTitle": "Everyone deserves the opportunity to protect their quality of life and their future, which is why we made our insurance so that everyone can buy.",
-    "chooseLabel": "Choose the value of your bike to get an idea of your monthly share",
+    "options": [
+      "All cyber threats",
+      "Content insurance",
+      "Account suspension",
+      "Investment losses",
+      "Reputational risks",
+      "Injury and illness"
+    ],
+    "chooseLabel": "Choose your monthly coverage",
     "values": [
       {
-        "amount": "1000$",
-        "perMonth": "12$",
-        "perYear": "120$"
+        "amount": "$3,000",
+        "perMonth": "$8",
+        "perYear": "$96"
       },
       {
-        "amount": "3000$",
-        "perMonth": "3$",
-        "perYear": "3$"
+        "amount": "$5,000",
+        "perMonth": "$15",
+        "perYear": "$180"
       },
       {
-        "amount": "5000$",
-        "perMonth": "5$",
-        "perYear": "5$"
+        "amount": "$7,000",
+        "perMonth": "$21",
+        "perYear": "$252"
       }
     ],
     "endSubTitle": "You can change your choice any time"
@@ -110,16 +140,20 @@
     {
       "question": "What is the internet income insurance?",
       "answer": "aaaaaa"
-    },{
+    },
+    {
       "question": "How does income insurance work?",
       "answer": "aaaaaa"
-    },{
+    },
+    {
       "question": "How much does insurance cost?",
       "answer": "aaaaaa"
-    },{
+    },
+    {
       "question": "When should i buy income insurance?",
       "answer": "aaaaaa"
-    },{
+    },
+    {
       "question": "Is it okay to buy cheap income insurance?",
       "answer": "aaaaaa"
     }
