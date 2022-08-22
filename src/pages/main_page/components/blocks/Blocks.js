@@ -54,9 +54,6 @@ export const Blocks = (props) => {
                     <div className="t2 title">
                         Cover your <br/>income like  <br/> never before
                     </div>
-                    <div className="sub_title">
-                        We cover what matters — your <br/> income like never before
-                    </div>
                 </div>
                 <div className="options flex_container__column">
                     {props.data.ThirdBlock.options.map((option, index) => (
@@ -94,7 +91,7 @@ export const Blocks = (props) => {
                     </div>
                 </div>
             </div>
-            <div id="fifth_block" className="fifth_block grid_container__halved">
+            <div id="fifth_block" className="fifth_block ">
                 <div className="info flex_container__column">
                     <div className="t2 title">
                         Simple as <span className="t2 title">1, 2, 3</span>

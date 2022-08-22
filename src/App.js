@@ -3,11 +3,11 @@ import {Header} from "./pages/common/header/Header";
 import {Footer} from "./pages/common/footer/Footer";
 import {BrowserRouter, HashRouter, Route, Routes,} from "react-router-dom";
 import {NotFoundPage} from "./pages/not_found_page/NotFoundPage";
-import {AboutPage} from "./pages/about_page/AboutPage";
 import {FaqPage} from "./pages/faq_page/FaqPage";
 import {useEffect} from "react";
 import {FixedLeftBlock} from "./pages/common/fixed_block/FixedLeftBlock";
 import data from "./dataAboutUsPage.json";
+import {AboutPage} from "./pages/about_page/AboutPage";
 
 export const App = () => {
 

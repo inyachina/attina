@@ -1,14 +1,14 @@
 @import "../../../assets/styles/variable";
 
 #budget {
-  height: 38rem;
+  min-height: 38rem;
   max-height: $max_height;
-  gap: 2rem;
 
   .info_desktop {
     height: 100%;
     background: $sub_accent_color;
     border-radius: 30px;
+    margin-right: 1rem;
 
     .sub_title {
       text-align: center;
@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-left: 1rem;
 
     .title {
       color: $light_text;
@@ -131,7 +132,41 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 1060px) {
+  #budget {
+    min-height: 34rem;
+
+    .t3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  #budget {
+    grid-template-columns: 40% 60% !important;
+
+    .info_desktop {
+      background: transparent;
+
+      .sub_title {
+        max-width: 85%;
+      }
+
+      .t3 {
+        text-align: start;
+        font-size: 1.7rem;
+      }
+    }
+
+    .budget_calculator {
+      .buttons {
+        width: 130%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
   #budget {
     margin-top: 7.5rem;
     height: auto;
@@ -161,10 +196,10 @@
         gap: 0.7rem;
 
         .option {
-          border-radius: 15px;
+          border-radius: 20px;
           background: $sub_accent_color;
           align-items: center;
-          padding: 1rem 0.7rem;
+          padding: 1rem 1.6rem;
 
           img {
             margin-right: 0.7rem;
@@ -176,6 +211,7 @@
     }
 
     .budget_calculator {
+      margin: 0;
       border-radius: 15px;
       padding: 3rem 1.6rem;
 

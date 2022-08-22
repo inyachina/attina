@@ -4,12 +4,11 @@ import phoneGif from '../../assets/img/phone_gif.svg'
 import triangle_1 from '../../assets/img/triangle_1.svg'
 import triangle_2 from '../../assets/img/triangle_2.svg'
 import triangle_3 from '../../assets/img/triangle_3.svg'
-import founder from '../../assets/img/founder.jpg'
 import "./about.scss";
 import logo from "../../assets/img/logo.svg";
 import data from '../../dataAboutUsPage.json';
-import {Budget} from "../common/budget/Budget";
 import {FixedLeftBlock} from "../common/fixed_block/FixedLeftBlock";
+import {Budget} from "../common/budget/Budget";
 
 export const AboutPage = () => {
     return (
@@ -77,7 +76,6 @@ export const AboutPage = () => {
                         {data.ThirdBlock}
                     </div>
                 </div>
-                <div></div>
             </div>
             <div id="fourth_block" className="grid_container__halved">
                 <div className="founder_img"/>
@@ -96,8 +94,8 @@ export const AboutPage = () => {
                     {data.FifthBlock}
                 </div>
             </div>
-            <FixedLeftBlock lightTheme data={data.SixthBlock}/>
-            <Budget/>
+                <FixedLeftBlock lightTheme data={data.SixthBlock}/>
+                <Budget/>
         </div>
     )
 }

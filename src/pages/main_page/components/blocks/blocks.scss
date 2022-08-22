@@ -61,15 +61,16 @@
 }
 
 .third_block {
-  height: 90vh;
   max-height: $max_height;
-  padding: 0 7rem;
+  padding: 7rem 7rem 7rem 0rem;
   background: $accent_color;
   border-radius: 30px;
 
   .info {
-    margin: auto auto auto 0;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     .title {
       color: $light_text;
       margin-bottom: 2.5rem;
@@ -86,7 +87,7 @@
 
   .options {
     gap: 1rem;
-    margin: auto;
+    margin: auto auto auto 5rem;
 
     .option {
       gap: 1.8rem;
@@ -95,7 +96,7 @@
       padding: 1rem 2.2rem;
 
       img {
-        height: 3rem;
+        height: 2.5rem;
       }
 
       .links {
@@ -126,13 +127,14 @@
 }
 
 .fourth_block {
-  height: 100vh;
   max-height: $max_height;
   position: relative;
+  margin: 7.5rem 0;
 
   .content {
-    margin: auto;
     gap: 2.5rem;
+    display: flex;
+    margin: auto auto auto 2rem;
 
     .sub_title {
       line-height: 125%;
@@ -141,18 +143,18 @@
   }
 
   .man_gif {
-    //background: #BC6CF3;
-    margin-top: 5rem;
+    margin-left: 3rem;
     width: 80%;
   }
 }
 
 .fifth_block {
-  min-height: 90vh;
   max-height: $max_height;
-  padding: 0 7rem;
+  padding: 4.5rem 7rem;
   background: $sub_accent_color;
   border-radius: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 
   .info {
     margin: auto;
