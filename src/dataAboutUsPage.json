@@ -1,46 +1,55 @@
 {
   "FirstBlock": {
-    "content": "We all don’t like to talk about bad things, we got it. But the reality is that 1 of 4 social media account \nstopped working or lost an audience due to hacking.",
-    "text1": "Our mission is to bring more care through honest, fair financing. We are here to reduce stress during difficult times and enjoy financial security. ",
+    "content": "We all don’t like to talk about bad things, we got it.\nBut the reality is that 1 of 3 social media account \u2028was hacked and lost their digital content forever.\n",
+    "text1": "Our mission is to bring more care through honest, fair financing. We are here to reduce stress during difficult times and enjoy financial security.",
     "text2": "Our insurance pays a proportion of your lost earnings to help you pay for your lifestyle, traveling, food, enabling you to focus on what really matters. "
   },
   "SecondBlock": [
     {
       "title": "Apply for a digital income insurance from Attina",
-      "content": "Unlike most insurance providers, we don't require any documents or other stuff. You just share a link to your account and choose the total amount of monthly coverage. Simple and fair."
+      "content": "Just share the link to your account and choose the amount of monthly coverage. Fair and fully digital."
     },
     {
       "title": "Start your coverage and do what you do best",
-      "content": "Once your policy is in place, you're all set! We’ll not let your income drop and our experts will make sure that you get as much useful information as possible about protecting your digital assets and accessing to it."
+      "content": "With our instant payouts we will not let your income drop and to prevent any cyber problems we will provide as much useful information as possible."
     },
     {
       "title": "Make a hassle-free claim and get refund instantly ",
-      "content": "We hope that you’ll never need to do this, but if the unexpected should happen and you need to make a claim. After we approve your claim, you'll receive a payout that you can use for whatever you need."
+      "content": "Click Claim on the main page and describe in form what happend. After we check it, you'll receive a payout for any your needs like shopping or hobbies."
     }
   ],
   "ThirdBlock": "Insuring your income is the most practical thing you can do to empower your future.",
-  "FourthBlock": "Our founder has been presenting cybersecurity and data protection for 10 years. He always knows as many people as possible.",
-  "FifthBlock": "Our founder has been presenting cybersecurity and data protection for 10 years. He always knows as many people as possible. Our founder has been presenting cybersecurity and data protection for 10 years. He always knows as many people as possible.",
+  "FourthBlock": "I believe that everyone can feel safe on the Internet like in their homes.",
+  "FifthBlock": "Our founder previously advised companies on security of digital assets. But more requests began to come from people of the new economy: streamers, influencers, crypto investors and others. Determined to make care accessible for everyone, he founded Attina.",
   "SixthBlock": {
     "title": "Our Customer Values",
     "subtitle": "We have set ourselves a number of values which help guide everyone in our team in how they should make decisions. ",
     "content": [
       {
+        "img": "accent_cover_icon_1.png",
         "title": "Continuous Learning",
-        "text": "Cyber literacy and cyber hygiene are the skills that we constantly develop in our clients. It's like healthy eating: you have to constantly learn these skills in yourself."
+        "text": "Cyber literacy and cyber hygiene — the skills that we try to develop in our clients. It's like healthy eating: you have to constantly learn new things about yourself to stay on track."
       },
       {
+        "img": "accent_cover_icon_2.png",
         "title": "Customer First",
+        "text": "We make decisions in a way that bears the world around us in mind. We work in a rapidly changing world and we must be ready to take on all the responsibility and risks as pioneers of insurance for digital content. And yes, we do."
+      },
+      {
+        "img": "accent_cover_icon_3.png",
+        "title": "Be Responsible",
         "text": "We will only build things that make our customers' lives better. We'll always talk to our community of customers to stay on top of what that is."
       },
       {
-        "title": "Customer First",
-        "text": "We will only build things that make our customers' lives better. We'll always talk to our community of customers to stay on top of what that is."
-      },
-      {
-        "title": "Customer First",
-        "text": "We will only build things that make our customers' lives better. We'll always talk to our community of customers to stay on top of what that is."
+        "img": "accent_cover_icon_4.png",
+        "title": "Keep getting better",
+        "text": "We believe that every single element of our business can keep getting better. At the forefront of innovation, we stay interested in everything that can make us be greater."
       }
     ]
+  },
+  "SeventhBlock": {
+    "title": "Built for Everyone",
+    "text_1": "Everyone deserves the opportunity to protect their quality of life and their future, which is why we've made our Digital Income Insurance so simple and accessible. ",
+    "text_2": "Our products was created to fit every budget and lifestyle."
   }
 }

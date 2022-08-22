@@ -1,8 +1,7 @@
 @import "src/assets/styles/variable";
 
 #about_page {
-
-  .t2{
+  .t2 {
     font-size: 3.8rem;
   }
 
@@ -86,7 +85,7 @@
 
     .main_block {
       margin-top: 7rem;
-      background: $sub_die_color;
+      background: $sub_accent_color;
       border-radius: 30px;
       padding: 3.5rem 5rem 7rem 5rem;
       gap: 2.5rem;
@@ -98,6 +97,7 @@
 
       .content {
         color: $accent_color;
+        max-width: 90%;
       }
     }
 
@@ -107,7 +107,7 @@
 
       .sub_block {
         gap: 1rem;
-        background: $sub_die_color;
+        background: $sub_accent_color;
         border-radius: 30px;
         padding: 3.2rem 6rem;
 
@@ -184,18 +184,25 @@
     background: $accent_color;
     border-radius: 30px;
     padding: 6.5rem 7rem;
+    position: relative;
 
     .founder_img {
-      //margin: auto;
-      height: 26rem;
-      width: 26rem;
-      border-radius: 100%;
-      background-size: 28rem;
-      background: url('../../assets/img/founder.jpg') center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+    }
+
+    .commas_img {
+      position: absolute;
+      left: calc(50% - 4rem);
+      top: 4rem;
+      height: 4.5rem;
     }
 
     .content {
       gap: 1.7rem;
+      margin-left: 50%;
 
       .t3 {
         color: $light_text;
@@ -215,6 +222,34 @@
 
     .t3 {
       color: $light_text;
+    }
+  }
+
+  #seventh_block {
+    .info {
+      background: $accent_color;
+      border-radius: 30px;
+      gap: 0.7rem;
+      padding: 4rem 2rem 5rem 2rem ;
+
+      .t2 {
+        color: $light_text;
+        text-align: center;
+      }
+
+      .text {
+        color: $light_text;
+        text-align: center;
+        max-width: 65%;
+        margin: auto;
+      }
+
+      button {
+        width: 12rem;
+        border-radius: 30px;
+        margin: 3.5rem auto auto auto;
+        border: none;
+      }
     }
   }
 }

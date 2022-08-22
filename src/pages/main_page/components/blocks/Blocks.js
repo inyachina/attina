@@ -11,7 +11,6 @@ import inst from '../../../../assets/img/white_inst.svg'
 import tiktok from '../../../../assets/img/white_tiktok.svg'
 import twitter from '../../../../assets/img/white_twitter.svg'
 import youtube from '../../../../assets/img/white_youtube.svg'
-import metamask from '../../../../assets/img/white_metamask.svg'
 import manGif from "../../../../assets/img/gifs/Man_With_MAgnifying_Glass.json";
 import {FixedLeftBlock} from "../../../common/fixed_block/FixedLeftBlock";
 import {JsonViewer} from "../../../common/json_viewer/JsonViewer";
@@ -25,7 +24,7 @@ export const Blocks = (props) => {
                 <div className="content t3">
                     {props.data.FirstBlock.content}
                 </div>
-                    <img className="desktop" src={arrowWhiteLearnMore}/>
+                <img className="desktop" src={arrowWhiteLearnMore}/>
                 <MobileButton text="Learn more"/>
             </div>
             <div className="second_block">
@@ -37,7 +36,7 @@ export const Blocks = (props) => {
                     {props.data.SecondBlock.facts.map((item) => (
                             <div className="fact flex_container__column">
                                 <div className="stat"
-                                     // style={{fontSize: `${item.large_text && "rem"}`}}
+                                    // style={{fontSize: `${item.large_text && "rem"}`}}
                                 >
                                     {item.stat}
                                 </div>
@@ -52,7 +51,7 @@ export const Blocks = (props) => {
             <div className="third_block grid_container__halved">
                 <div className="info">
                     <div className="t2 title">
-                        Cover your <br/>income like  <br/> never before
+                        Cover your <br/>income like <br/> never before
                     </div>
                 </div>
                 <div className="options flex_container__column">
@@ -118,7 +117,7 @@ export const Blocks = (props) => {
                     {props.data.SevenBlock.content}
                 </div>
                 <img className="desktop" src={arrowGetProtection}/>
-                <MobileButton text={"Get protection"} />
+                <MobileButton text={"Get protection"}/>
             </div>
         </>)
 }
