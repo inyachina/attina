@@ -57,17 +57,23 @@
     margin: auto auto 2rem;
 
     .left_block {
-      border-radius: 30px;
+      border-radius: 20px;
       background: $sub_accent_color;
-      height: 40vh;
       gap: 2.5rem;
       align-items: center;
-      padding: 8.5rem 7rem;
+      padding: 6rem 7rem;
+      max-height: $max_height;
+      justify-content: center;
     }
 
     div {
       color: $accent_color;
       text-align: center;
+      .json_container__absolute{
+        right: -10rem;
+        left: auto;
+        transform: scale(1);
+      }
     }
   }
 }
@@ -90,13 +96,8 @@
       color: $light_text;
       margin-left: 0.5rem;
     }
+    b{
+      color: $light_text;
+    }
   }
-}
-
-.left_block {
-  background: $sub_accent_color;
-  height: 90vh;
-  max-height: $max_height;
-  border-radius: 30px;
-  justify-content: center;
 }

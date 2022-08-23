@@ -5,7 +5,9 @@ import $ from 'jquery';
 import {QuestionBlock} from "./QuestionBlock";
 import arrowMoreQuestions from '../../assets/img/arrowMoreQuestions.svg'
 import anime from "animejs/lib/anime.es.js";
-
+import {JsonViewer} from "../common/json_viewer/JsonViewer";
+import megaphone from '../../assets/img/gifs/Megaphone.json';
+import {SocialMedia} from "../common/social_media/SocialMedia";
 export const FaqPage = () => {
     const [questions, setQuestions] = useState(data.questions.filter((q) => q.category === data.categories[0].name).map(q => q));
     const [expanded, setExpanded] = useState(false)
@@ -29,6 +31,7 @@ export const FaqPage = () => {
     }, [questions, arrowTurnAnimation, arrowReturnAnimation])
 
     const handleFilterClick = (categoryName) => {
+        narrowQuestions();
         const filteredArrays = data.questions.filter((q) => q.category === categoryName).map(q => q);
         setQuestions([...filteredArrays]);
     }
@@ -40,6 +43,11 @@ export const FaqPage = () => {
         setExpanded(!expanded)
         if (!expanded) arrowTurnAnimation.current.restart()
         else arrowReturnAnimation.current.restart()
+    }
+
+    const narrowQuestions = () =>{
+        if (expanded) arrowReturnAnimation.current.restart()
+        setExpanded(false)
     }
 
     return (
@@ -84,8 +92,12 @@ export const FaqPage = () => {
                         <div>Reach out to our customer experience team via email and we'll get back to you shortly.
                         </div>
                         <div>support@attina.com</div>
+                        <div className="flex_container gap-1rem">
+                            <SocialMedia media="inst"/>
+                            <SocialMedia media="twitter"/>
+                        </div>
                     </div>
-                    <div></div>
+                    <JsonViewer src={megaphone}/>
                 </div>
             </div>
 

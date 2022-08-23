@@ -4,7 +4,7 @@
       "name": "Claim"
     },
     {
-      "name": "Insurance 101"
+      "name": "Insurance"
     },
     {
       "name": "Policy"
@@ -13,38 +13,113 @@
   "questions": [
     {
       "category": "Claim",
-      "question": "What is the internet income insurance?",
-      "answer": "More and more people choose an independent way of earning money in social media and in crypto. They need a flexible and easy way to protect their income and their account from rising cyber threats, scams and blocking, so we're creating a new category of income insurance for self-employed people!<br/><br/>We're calling it 'Internet income Insurance' because it's intended to protect your internet income, so you maintain your lifestyle in cerenity and peace."
+      "question": "How is your payout calculated?",
+      "answer": "We simply multiply the amount of daily coverage by the number of days the account is unavailable or blocked. For example, for $3,000 coverage per month the weekly account coverage would be $700 (3,000/30 = $100 per day * 7 days = $700).\n"
     },
     {
       "category": "Claim",
+      "question": "How is the payout for content or account loss calculated?",
+      "answer": "The insurance package includes free backup of your account content and encrypted storage. So in case of any damage, we will try to recover your data. If that fails, you will receive a one-time payout from $300 to $700 depending on the plan."
+    },
+    {
+      "category": "Claim",
+      "question": "What should I expect after a claim is submitted?",
+      "answer": "Once you file a claim, your claim will be assigned to an examiner. This examiner will reach out to you and begin the process of authorizing and collecting the appropriate data needed to approve your claim. Sometimes it's photos of damaged phone or screenshots of technical problems."
+    },
+    {
+      "category": "Claim",
+      "question": "How quickly payouts are made?",
+      "answer": "In 85% of cases we send the payment to our clients on the same day. But sometimes we need to be sure of the amount of damage caused. Usually it takes no more than 2-3 days.\n"
+    },
+    {
+      "category": "Claim",
+      "question": "How many days of paid sick leave can I take per year?",
+      "answer": "We provide 14 days of paid vacation per year. You can treat your health or take care of family issues and we will make sure that your income does not fall."
+    },
+    {
+      "category": "Claim",
+      "question": "How do I get a refund for a lost or broken phone?",
+      "answer": "We provide a one-time to help you keep in touch with your users and business partners. Thу amount depends on your coverage level but always more than $300 .To do this, simply click Claim on the main page and fill out the form and our support team will contact you and solve the problem.\n"
+    },
+    {
+      "category": "Insurance",
+      "question": "What is internet income insurance?",
+      "answer": "More and more people choose an independent way of earning money in social media and in crypto. They need a flexible and easy way to protect their income and their account from rising cyber threats, scams and blocking, so we designed a unique income insurance that meets modern requirements of self-employed people! We're calling it 'Internet income Insurance' because it's intended to protect your internet income, so you maintain your lifestyle in serenity and peace.\n"
+    },
+    {
+      "category": "Insurance",
+      "question": "When should I buy income insurance?",
+      "answer": "Income insurance can be necessary if you are:<br/><br/><li/>Business promoter or business owner, for whom all business is tied to his personal profile<br/><li/>Blogger, streamer, photographer or real estate agent who uses social media as a main source of gain income<br/><li/>Self-employed marketer or designer as you may not have sick or annual leave <br/><li/>Have family members or dependents that rely on the income you earn<br/><li/>Have debt, such as a mortgage, where you'll need to make payments on even if you're unable to work\n"
+    },
+    {
+      "category": "Insurance",
       "question": "How does income insurance work?",
-      "answer": "Income insurance pays a benefit that replaces a portion of your income if something happens to your account or you that interferes with your usual activities. You just report the incident or your feeling unwell in any way, we check the information and make the payment directly to your card. <br/><br/>This usually happens on the day of the application without paperwork struggle, the process is fully digital."
+      "answer": "Income insurance pays a benefit that replaces a portion of your income if something happens to your account or you that interferes with your usual activities. You just report the incident or your unwell feelings, we check the information and make the payment directly to your card. This usually happens on the day of the application without paperwork struggle, the process is fully digital."
     },
     {
-      "category": "Claim",
-      "question": "How much does insurance cost?",
-      "answer": "Income insurance policy costs vary based on many factors like (but not limited to) health risk, age, benefit amount, elimination period, benefit period, or policy term. At Asteya, we have a variety of options to fit your budget."
+      "category": "Insurance",
+      "question": "Is it okay to buy cheap income insurance?",
+      "answer": "With income insurance, cheap is chic as long as quality and care are included too! <br/><b>Studies show a positive impact of income insurance on long-term savings. \nWhether your goal is maximum income protection or safeguarding specific expenses, like a mortgage or traveling – an income insurance policy can be designed to meet your needs </b>without breaking your budget. In fact, income insurance is one of the least expensive insurance coverages.\n"
     },
     {
-      "category": "Claim",
-      "question": "When should i buy income insurance?",
-      "answer": "Income insurance is for anyone who wants a safety net of financial security. However, certain factors can increase your need for income insurance and may be necessary if you:<li>Do not have sick or annual leave because you are self-employed or a small business owner.</li><li>Have family members or dependents who rely on your income.</li><li>Have debt that requires weekly, monthly, or annual payments even if you can't work.</li><br/>The earlier you jump on the income insurance train, the faster you are on track to financial security! If you are young and healthy now, then qualifying for a policy is easier and the premiums are much lower -- no reason to wait!"
+      "category": "Insurance",
+      "question": "How can Attina prevent cyber threats and loss of income?",
+      "answer": "The purpose of our service is to teach you safe skills that do not endanger your internet income. We give you a personal agent who will tell you how best to protect your account from cyber threats. We also constantly publish educational materials and useful tips. And if you have a question, you can always consult our team and not worry about your income.\n\n"
+    },
+    {
+      "category": "Insurance",
+      "question": "How can Attina's insurance help protect against reputational risks and lawsuits?\n",
+      "answer": "Our main goal is to keep the trust of your subscribers and advertisers, so we stand for an honest approach to protect you from unwanted problems. Negatives can react to your posts by claiming you've stolen their ideas, you've disparaged or defamed them or their business or products. Our team of lawyers and human rights defenders will be able to help you properly build relationships with partners and resolve any legal problems.\n"
+    },
+    {
+      "category": "Insurance",
+      "question": "Can I insure any social network?",
+      "answer": "Our team is working on adding new media. Now You can protect your Instagram, Tiktok, Twitter and Youtube accounts. During the next couple of months we will add Facebook, LinkedIn, Snapchat, Twitch, Discord and Pinterest."
+    },
+    {
+      "category": "Insurance",
+      "question": "Can I insure my crypto assets: crypto wallets and NFT?\n",
+      "answer": "We are currently exploring this possibility with several of our partners. This requires additional efforts in real-time network monitoring, so we would like to perfect this service. We hope to implement insurance for crypto assets before the end of this year. Follow our updates on social networks.\n"
+    },
+    {
+      "category": "Insurance",
+      "question": "Are you really fully digital?\n",
+      "answer": "The application and underwriting process are fully digital - no medical exams, no paperwork, no queues in offices. All communication takes place in messengers and a digital copy is enough to confirm a legal document."
     },
     {
       "category": "Policy",
-      "question": "What is the internet income insurance?",
-      "answer": "More and more people choose an independent way of earning money in social media and in crypto. They need a flexible and easy way to protect their income and their account from rising cyber threats, scams and blocking, so we're creating a new category of income insurance for self-employed people!<br/><br/>We're calling it 'Internet income Insurance' because it's intended to protect your internet income, so you maintain your lifestyle in cerenity and peace."
+      "question": "What does this policy cover?",
+      "answer": "Our policy covers losses of your account income from unauthorized third party access, blocking or removal of content, fraud, loss of ability to work due to health problems. \n"
     },
     {
-      "category": "Claim",
-      "question": "What",
-      "answer": "More"
+      "category": "Policy",
+      "question": "How much coverage should I purchase?\n",
+      "answer": "Choose the amount of coverage only based on your monthly income. This will help you maintain your usual lifestyle in case of unexpected problems  and the service fee will not seem significant. Moreover we made our prices as low as possible on purpose so that any professionals with different earnings levels were able to evaluate the service and have the opportunity to protect their account from cyber threats and other causes of income loss.\n"
     },
     {
-      "category": "Claim",
-      "question": "What",
-      "answer": "More"
+      "category": "Policy",
+      "question": "Can I cancel my policy at any time?",
+      "answer": "Yes, you are able to cancel your policy at any time by just notifying us through the site or our social media media.\n"
+    },
+    {
+      "category": "Policy",
+      "question": "How often can I make changes to my policy?",
+      "answer": "You are able to make changes to your policy anytime during the term of your policy. All policy changes are subject to a 3 day waiting period.\n\n"
+    },
+    {
+      "category": "Policy",
+      "question": "Does income insurance cover all cases?\n",
+      "answer": "Not necessarily. You should always consult with an insurance agent and carefully read the exclusion list.\n"
+    },
+    {
+      "category": "Policy",
+      "question": "Is income insurance available where I live?",
+      "answer": "We are working hard to add income insurance products to all of the United States and Europe. We are also testing our policy in Australia and MENA region. Please visit our blog to follow our latest company news and see when your country is available.\n"
+    },
+    {
+      "category": "Policy",
+      "question": "What about verifying the identity of the owner?",
+      "answer": "Only the account owner has the right to insure it. To confirm this immediately after the purchase, we write to the account in the DM to make sure that it was you. We also use two-factor authentication to protect you from potential scammers. We are very careful about the use of personal data and do not want to undermine the trust of our community.\n\n"
     }
   ]
 }
