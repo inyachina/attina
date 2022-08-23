@@ -97,6 +97,14 @@
       .t2 {
         color: $dark_text !important;
       }
+
+      .subtitle{
+        margin-top: 1.6rem;
+        max-width: 77%;
+        font-size: 1rem;
+        color: $dark_text!important;
+        margin-bottom: 2rem;
+      }
     }
 
     .sub_blocks {

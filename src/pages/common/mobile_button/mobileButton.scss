@@ -17,5 +17,13 @@
     max-width: 1.1rem;
     margin-right: 0.5rem;
   }
+}
 
+.accent_mobile_button {
+  background: $accent_color;
+  color: $bg_color;
+
+  img {
+    filter: brightness(0) invert(1);
+  }
 }

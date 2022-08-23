@@ -4,6 +4,7 @@ import triangle_1 from '../../assets/img/triangle_1.svg'
 import triangle_2 from '../../assets/img/triangle_2.svg'
 import triangle_3 from '../../assets/img/triangle_3.svg'
 import Alexander from '../../assets/img/Alexander.png'
+import AlexanderCircle from '../../assets/img/AlexanderCircle.png'
 import commas from '../../assets/img/commas.svg'
 import "./about.scss";
 import "./aboutAdaptive.scss";
@@ -13,32 +14,34 @@ import {FixedLeftBlock} from "../common/fixed_block/FixedLeftBlock";
 import {JsonViewer} from "../common/json_viewer/JsonViewer";
 import phoneGif from "../../assets/img/gifs/Like_A_Post.json";
 import handGif from "../../assets/img/gifs/Thumbs_Up.json";
+import pinkHandGif from "../../assets/img/gifs/Pink_Thumbs_Up.json";
+import {MobileButton} from "../common/mobile_button/MobileButton";
 
 export const AboutPage = () => {
     return (
         <div id="about_page" className="main_container">
             <div className="t1 main_title main_margin_top">
-                Enjoy stability doing<br className="desktop"/> what you love.
+                Enjoy stability <br className={"mobile"}/> doing<br className="desktop"/> what <br
+                className={"mobile"}/> you love.
             </div>
             <img className="arrow desktop" src={arrowLearnMore}/>
-            <div className="block_phone">
-                <div className="container__relative container__centered">
-
-                    <div className="phone_gif">
-                        <JsonViewer src={phoneGif}/>
-                    </div>
-                    <div className="tip shopping">
-                        <span className="t3">Free you mind</span>
-                        <img src={triangle_1}/>
-                    </div>
-                    <div className="tip feel_safe">
-                        <span className="t3">Feel safe</span>
-                        <img src={triangle_3}/>
-                    </div>
-                    <div className="tip travelling">
-                        <span className="t3">Keep going!</span>
-                        <img src={triangle_2}/>
-                    </div>
+            <div className="phone_block container__relative container__centered">
+                <div className="phone_gif">
+                    <JsonViewer src={phoneGif}/>
+                </div>
+                <div className="tip free">
+                    <span className="t3">Free you <br className="mobile"/>mind</span>
+                    <img src={triangle_1}/>
+                </div>
+                <div className="tip feel_safe">
+                    <span className="t3 desktop">Feel safe</span>
+                    <span className="t3 mobile">Keep <br/> going!</span>
+                    <img src={triangle_3}/>
+                </div>
+                <div className="tip keep">
+                    <span className="t3 desktop">Keep going</span>
+                    <span className="t3 mobile">Feel<br/> save</span>
+                    <img src={triangle_2}/>
                 </div>
             </div>
             <div id={"first_block"} className="flex_container__column">
@@ -82,19 +85,23 @@ export const AboutPage = () => {
                     <div className="t2">
                         {data.ThirdBlock}
                     </div>
+                    <div className="hand_gif hand_gif_tablet">
+                        <JsonViewer src={pinkHandGif}/>
+                    </div>
                 </div>
-                <div className="hand_gif">
+                <div className="hand_gif hand_gif_desktop">
                     <JsonViewer src={handGif}/>
                 </div>
             </div>
             <div id="fourth_block">
-                <img className="founder_img" src={Alexander}/>
+                <img className="founder_img desktop" src={Alexander}/>
                 <img className="commas_img" src={commas}/>
                 <div className="content flex_container__column">
                     <div className="t3">
                         {data.FourthBlock}
                     </div>
-                    <div className="sub_title">
+                    <div className="sub_title flex_container">
+                        <img className="photo_tablet" src={AlexanderCircle}/>
                         Alexander Khopersky<br/>
                         Founder&CEO Attina
                     </div>
@@ -109,10 +116,14 @@ export const AboutPage = () => {
             <div id="seventh_block" className="grid_container__halved">
                 {/*<JsonViewer src={giveFiveJson}/>*/}
                 <div className="info flex_container__column">
+                    <a className="logo mobile" href="/">
+                        <img src={logo}/>
+                    </a>
                     <div className="t2">{data.SeventhBlock.title}</div>
                     <div className="text">{data.SeventhBlock.text_1}<br/>{data.SeventhBlock.text_2}</div>
                     <a href={""}>
-                        <button className="mobile_button">Get Started</button>
+                        <button className="desktop mobile_button">Get Started</button>
+                        <MobileButton accent text={"Get Started"}/>
                     </a>
                 </div>
             </div>

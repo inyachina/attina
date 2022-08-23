@@ -1,1 +1,350 @@
 @import "src/assets/styles/variable";
+
+@media (max-width: 600px) {
+  #about_page {
+    .main_title {
+      font-size: 3rem !important;
+    }
+
+    .phone_block {
+      margin-top: 4rem;
+
+      .phone_gif {
+        height: 14rem;
+
+        .json_container__absolute {
+          transform: scale(1.2);
+        }
+
+      }
+
+      .tip {
+        border-radius: 20px;
+      }
+
+      .free {
+        left: 0rem;
+        bottom: 4.8rem;
+        top: auto;
+        min-height: 5.5rem;
+        min-width: 7.1rem;
+        background: $sub_die_color;
+        padding: 0 0.5rem;
+
+        img {
+          right: -1rem;
+          width: 4rem;
+        }
+      }
+
+      .feel_safe {
+        right: 0rem;
+        bottom: 1.2rem;
+        left: auto;
+        top: auto;
+        min-height: 5.6rem;
+        min-width: 7.1rem;
+        background: $sub_accent_color;
+
+        img {
+          right: auto;
+          left: -1rem;
+          width: 4rem;
+          transform: scaleX(-1);;
+        }
+      }
+
+      .keep {
+        right: 0.5rem;
+        top: -2.5rem;
+        left: auto;
+        bottom: auto;
+        min-height: 6rem;
+        min-width: 5.6rem;
+        background: $sub_die_color;
+
+        img {
+          left: -1rem;
+          width: 4rem;
+        }
+      }
+    }
+
+    #first_block {
+      gap: 0.7rem;
+
+      .main_block {
+        margin-top: 7rem;
+        background: $sub_accent_color;
+        border-radius: 20px;
+        padding: 2rem 0.6rem 2.5rem 0.6rem;
+        gap: 2.5rem;
+        text-align: center;
+      }
+
+      .sub_blocks {
+        gap: 0.7rem;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .sub_block {
+          gap: 0.7rem;
+          border-radius: 20px;
+          padding: 1rem 2rem 1.5rem 2rem;
+
+        }
+      }
+    }
+
+    #second_block {
+      margin: 8.2rem 0 0 0;
+
+      .t2 {
+        text-align: center;
+      }
+
+      .blocks {
+        gap: 0.7rem;
+        margin-top: 2rem;
+
+        .block {
+          border-radius: 20px;
+          padding: 2rem 1.7rem;
+          gap: 0.7rem;
+
+          .title {
+            font-size: 1rem;
+            gap: 0.7rem;
+
+            .number {
+              min-height: 2rem;
+              min-width: 2rem;
+            }
+
+            .text {
+              font-size: 1rem;
+            }
+          }
+
+          .t3 {
+            font-size: 1.7rem;
+            line-height: 120%;
+          }
+        }
+      }
+    }
+
+
+    #fifth_block {
+
+      margin-top: -1rem;
+      border-radius: 20px;
+      padding: 2rem 1.7rem;
+
+      .t3 {
+        color: $light_text;
+      }
+    }
+
+    #seventh_block {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+
+      .info {
+        background: transparent;
+        border-radius: 20px;
+        gap: 1rem;
+        padding: 0;
+
+        .logo {
+          margin: auto;
+
+          img {
+            height: 3rem;
+          }
+        }
+
+        .t2 {
+          color: $dark_text;
+          text-align: center;
+        }
+
+        .text {
+          color: $dark_text;
+          max-width: 85%;
+          margin-bottom: 2.6rem;
+        }
+
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  #about_page #third_block {
+    display: flex;
+    margin: 1rem 0;
+
+
+    .hand_gif_desktop {
+      display: none;
+    }
+
+    .left_block {
+      background: $sub_accent_color;
+      border-radius: 20px;
+      padding: 2.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+
+      .t2 {
+        max-width: 75%;
+
+        .json_container__relative {
+          margin-top: 3rem;
+        }
+      }
+
+      .hand_gif_tablet {
+        display: block;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  #about_page {
+    #first_block {
+      padding: 3.5rem 1rem 6rem 1rem;
+
+      .main_block .content {
+        max-width: initial;
+      }
+
+      .sub_blocks .sub_block {
+        padding: 2rem 2rem;
+
+      }
+    }
+
+    #fourth_block {
+      .founder_img {
+        left: -3rem;
+      }
+    }
+
+    #fifth_block {
+      padding: 5rem 4rem;
+    }
+
+    #seventh_block {
+      .info {
+        padding: 4rem 1rem;
+
+        .text {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #about_page #fourth_block {
+    border-radius: 20px;
+    padding: 3rem 1.7rem;
+
+
+    .founder_img {
+      display: none;
+    }
+
+    .commas_img {
+      display: none;
+    }
+
+    .content {
+      gap: 1.7rem;
+      margin-left: 0;
+
+      .sub_title {
+        gap: 1rem;
+
+        .photo_tablet {
+          display: block;
+        }
+      }
+    }
+  }
+
+  #about_page #third_block .left_block {
+    .t2{
+      font-size: 3rem;
+    }
+    .hand_gif_tablet .json_container__absolute {
+      transform: scale(0.9);
+    }
+  }
+}
+
+@media(min-width: 1100px) and (max-width: 1200px) {
+  #about_page .phone_gif {
+    transform: scale(0.8);
+  }
+  #about_page .tip {
+    transform: scale(0.9);
+  }
+}
+
+@media(min-width: 800px) and (max-width: 1100px) {
+  #about_page .phone_gif {
+    transform: scale(0.7);
+  }
+  #about_page .tip {
+    transform: scale(0.7);
+  }
+}
+
+@media(min-width: 600px) and (max-width: 800px) {
+  #about_page .phone_gif {
+    transform: scale(0.7);
+  }
+  #about_page .tip {
+    transform: scale(0.7);
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1360px) {
+  #about_page .phone_block .keep {
+    right: 3rem;
+  }
+  #about_page .phone_block .free {
+    left: 1rem;
+  }
+  #about_page .phone_block .feel_safe {
+    left: 6rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1050px) {
+  #about_page .phone_block .keep {
+    right: -1rem;
+  }
+  #about_page .phone_block .free {
+    left: -2rem;
+  }
+  #about_page .phone_block .feel_safe {
+    left: 2rem;
+  }
+}
+
+@media(min-width: 500px) and (max-width: 600px) {
+  #about_page .phone_block .phone_gif .json_container__absolute {
+    transform: scale(1.5);
+  }
+}
