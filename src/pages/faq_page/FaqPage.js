@@ -7,7 +7,9 @@ import arrowMoreQuestions from '../../assets/img/arrowMoreQuestions.svg'
 import anime from "animejs/lib/anime.es.js";
 import {JsonViewer} from "../common/json_viewer/JsonViewer";
 import megaphone from '../../assets/img/gifs/Megaphone.json';
+import pinkMegaphone from '../../assets/img/gifs/PinkMegaphone.json';
 import {SocialMedia} from "../common/social_media/SocialMedia";
+
 export const FaqPage = () => {
     const [questions, setQuestions] = useState(data.questions.filter((q) => q.category === data.categories[0].name).map(q => q));
     const [expanded, setExpanded] = useState(false)
@@ -45,7 +47,7 @@ export const FaqPage = () => {
         else arrowReturnAnimation.current.restart()
     }
 
-    const narrowQuestions = () =>{
+    const narrowQuestions = () => {
         if (expanded) arrowReturnAnimation.current.restart()
         setExpanded(false)
     }
@@ -89,15 +91,20 @@ export const FaqPage = () => {
                 <div id="help_block" className="grid_container__halved">
                     <div className="left_block flex_container__column">
                         <div className="t2">Can't find what you're looking for?</div>
-                        <div>Reach out to our customer experience team via email and we'll get back to you shortly.
+                        <div className="text">Reach out to our customer experience team via email and we'll get back to you shortly.
                         </div>
                         <div>support@attina.com</div>
                         <div className="flex_container gap-1rem">
                             <SocialMedia media="inst"/>
                             <SocialMedia media="twitter"/>
                         </div>
+                        <div className="tablet_json">
+                            <JsonViewer src={pinkMegaphone}/>
+                        </div>
                     </div>
-                    <JsonViewer src={megaphone}/>
+                    <div className="desktop_megaphone">
+                        <JsonViewer src={megaphone}/>
+                    </div>
                 </div>
             </div>
 

@@ -1,13 +1,12 @@
 import {MainPage} from "./pages/main_page/MainPage";
 import {Header} from "./pages/common/header/Header";
 import {Footer} from "./pages/common/footer/Footer";
-import {BrowserRouter, HashRouter, Route, Routes,} from "react-router-dom";
+import {BrowserRouter, Route, Routes,} from "react-router-dom";
 import {NotFoundPage} from "./pages/not_found_page/NotFoundPage";
 import {FaqPage} from "./pages/faq_page/FaqPage";
-import {useEffect} from "react";
-import {FixedLeftBlock} from "./pages/common/fixed_block/FixedLeftBlock";
-import data from "./dataAboutUsPage.json";
 import {AboutPage} from "./pages/about_page/AboutPage";
+import {PolicyPage} from "./pages/policy_page/PolicyPage";
+import {TermsPage} from "./pages/terms_page/TermsPage";
 
 export const App = () => {
 
@@ -32,6 +31,8 @@ export const App = () => {
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/faq" element={<FaqPage/>}/>
                     <Route path="*" element={<NotFoundPage/>}/>
+                    <Route path="/privacy" element={<PolicyPage/>}/>
+                    <Route path="/terms" element={<TermsPage/>}/>
                 </Routes>
             </BrowserRouter>
             <Footer/>

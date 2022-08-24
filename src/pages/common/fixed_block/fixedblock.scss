@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    //position: absolute;
 
     .t2 {
       max-width: 75%;
@@ -26,6 +27,7 @@
   .sub_blocks {
     gap: 2rem;
     margin-left: 2rem;
+    height: 100%;
 
     .sub_block {
       .content {
@@ -59,24 +61,6 @@
     }
   }
 
-  .wrapper {
-    height: 100%;
-    position: relative;
-
-    .fixed-wrapper {
-      position: absolute;
-      top: 0;
-
-      height: 100%;
-      width: 100%;
-
-      .fixed {
-        top: 1rem;
-        position: sticky;
-      }
-    }
-  }
-
 }
 
 @media (max-width: 600px) {
@@ -85,6 +69,7 @@
     display: flex !important;
 
     .fixed_block {
+      position: sticky;
       width: 100%;
       max-width: 100%;
       height: auto;
@@ -98,11 +83,11 @@
         color: $dark_text !important;
       }
 
-      .subtitle{
+      .subtitle {
         margin-top: 1.6rem;
         max-width: 77%;
         font-size: 1rem;
-        color: $dark_text!important;
+        color: $dark_text !important;
         margin-bottom: 2rem;
       }
     }
@@ -153,12 +138,6 @@
             font-size: 0.8rem;
           }
         }
-      }
-    }
-
-    .wrapper {
-      .fixed-wrapper {
-        position: initial;
       }
     }
   }

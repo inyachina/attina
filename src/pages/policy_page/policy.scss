@@ -1,0 +1,14 @@
+@import "src/assets/styles/variable";
+.policy{
+  padding: 7rem;
+
+  *{
+    color: $dark_text;
+  }
+}
+
+@media(max-width: 900px){
+  .policy {
+    padding: 2rem;
+  }
+}

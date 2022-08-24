@@ -10,22 +10,22 @@ export const Footer = () => {
             <div className="line"/>
             <div className="content">
                 <a href="/">
-                    <img src={logo}/>
+                    <img className="main_logo" src={logo}/>
                 </a>
                 <div className="links flex_container">
                     <div className="column flex_container__column">
                         <span>Company</span>
                         <a href="/about">About us</a>
                         <a>How it works</a>
-                        <a href="/faq">Faq</a>
+                        <a href="/faq">FAQ</a>
                     </div>
 
                     <div className="column flex_container__column">
-                        <span>More</span>
-                        <a>Privacy policy</a>
-                        <a>Contact us</a>
+                        <span>Legal</span>
+                        <a href={"/privacy"}>Privacy policy</a>
+                        <a href={"/terms"}>Terms of condition</a>
                     </div>
-                    <div className="column flex_container__column">
+                    <div className="footer_socials column flex_container__column">
                         <span>Social media</span>
                         <div className="flex_container gap-1rem">
                             <a><img src={twitter}/></a>

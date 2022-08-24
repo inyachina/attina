@@ -118,3 +118,27 @@
     }
   }
 }
+
+@media (max-width: 470px) {
+  #intro {
+    .intro_json {
+      margin-top: -15vw;
+      .json_container__absolute{
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  #intro {
+    .info .t1{
+      padding: 0 1rem;
+    }
+    .intro_json {
+      margin-top: -15vw;
+      .json_container__absolute{
+        transform: scale(1.3);
+      }
+    }
+  }
+}

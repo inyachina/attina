@@ -230,6 +230,10 @@
   }
 
   #seventh_block {
+    .json_container__absolute{
+      transform: scale(1);
+      top: -3rem;
+    }
     .info {
       background: $accent_color;
       border-radius: 30px;

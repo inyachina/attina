@@ -8,14 +8,20 @@
     align-items: center;
   }
 
-  .gif_container {
-    width: 50vw;
-    height: 40vh;
-  }
-
   .gif {
-    width: 60rem;
-    top: -20rem;
-    left: -10rem;
+    top: -12rem;
+  }
+}
+
+@media (max-width: 750px) {
+  #not_found_page {
+    .gif {
+      top: 0;
+    }
+    .grid_container__halved {
+      margin-bottom: 20rem;
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

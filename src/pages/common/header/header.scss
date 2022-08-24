@@ -3,7 +3,7 @@
 #header {
   max-width: $max-width;
   width: $width;
-  padding: 0 12.5vw;
+  margin: auto;
   gap: 1rem;
   background: rgba(248, 239, 255, 0.8);
   top: 0;
@@ -13,21 +13,127 @@
   height: 10vh;
   //position: fixed;
   transition: top 0.3s;
-  z-index: 10000;
+
+  .main_logo {
+    z-index: 1000;
+  }
 
   button {
-    border: 2px solid $accent_color;
+    border: none;
     border-radius: 116px;
     padding: 0.5rem 0;
     width: 8.5rem;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
-  .claim{
-    background: transparent;
+
+  .claim {
+    background: $sub_accent_color;
+    color: $accent_color;
   }
-  .get_started{
+
+  .get_started {
     background: $accent_color;
     color: $bg_color;
     font-weight: lighter;
+  }
+}
+
+.mobile_menu_button {
+  background: $accent_color;
+  color: $light_text;
+  border-radius: 15px;
+  padding: 0.7rem 1rem !important;
+  width: auto;
+  font-size: 0.9rem;
+  display: none;
+  z-index: 1000;
+
+  img {
+    margin-right: 0.7rem;
+    height: 0.9rem;
+  }
+}
+
+.active_link {
+  text-decoration: underline;
+}
+
+.mobile_menu {
+  opacity: 0;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  position: fixed;
+  background: $comment_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+
+  .main_logo {
+    position: absolute;
+    top: 1.3rem;
+    left: 1.5rem;
+  }
+
+  .menu_links {
+    margin-bottom: 6rem;
+
+    a {
+      font-size: 4rem;
+      text-align: center;
+    }
+  }
+
+  .menu_buttons_container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    .menu_buttons {
+      width: 100%;
+      //background: #453551;
+      padding: 2rem 1rem;
+      gap: 0.7rem;
+
+      .privacy_button {
+        .privacy_button_absolute {
+          position: relative;
+
+          img {
+            position: absolute;
+            height: 1.5rem;
+            top: -0.2rem;
+            left: calc(50% - 6.5rem);
+          }
+        }
+      }
+
+      button {
+        width: calc(100% - 2rem) !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #header {
+    .desktop_header {
+      display: none;
+    }
+
+    .mobile_menu_button {
+      display: block;
+    }
   }
 }

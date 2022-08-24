@@ -15,6 +15,7 @@ import {JsonViewer} from "../common/json_viewer/JsonViewer";
 import phoneGif from "../../assets/img/gifs/Like_A_Post.json";
 import handGif from "../../assets/img/gifs/Thumbs_Up.json";
 import pinkHandGif from "../../assets/img/gifs/Pink_Thumbs_Up.json";
+import interfaceGif from "../../assets/img/gifs/Interface.json";
 import {MobileButton} from "../common/mobile_button/MobileButton";
 
 export const AboutPage = () => {
@@ -46,7 +47,7 @@ export const AboutPage = () => {
             </div>
             <div id={"first_block"} className="flex_container__column">
                 <div className="main_block flex_container__column">
-                    <img src={logo}/>
+                    <img  src={logo}/>
                     <div className="t3 content">
                         {data.FirstBlock.content}
                     </div>
@@ -114,7 +115,7 @@ export const AboutPage = () => {
             </div>
             <FixedLeftBlock lightTheme data={data.SixthBlock}/>
             <div id="seventh_block" className="grid_container__halved">
-                {/*<JsonViewer src={giveFiveJson}/>*/}
+                <JsonViewer src={interfaceGif}/>
                 <div className="info flex_container__column">
                     <a className="logo mobile" href="/">
                         <img src={logo}/>

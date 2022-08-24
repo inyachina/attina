@@ -19,9 +19,9 @@ export const Intro = (props) => {
                     </div>
                     <div className="links flex_container">
                         <SocialMedia media="inst"/>
-                        <SocialMedia media="tiktok"/>
+                        {/*<SocialMedia media="tiktok"/>*/}
                         <SocialMedia media="twitter"/>
-                        <SocialMedia media="youtube"/>
+                        {/*<SocialMedia media="youtube"/>*/}
                     </div>
                 </div>
                 <button className="st1">
