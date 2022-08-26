@@ -17,6 +17,7 @@ import handGif from "../../assets/img/gifs/Thumbs_Up.json";
 import pinkHandGif from "../../assets/img/gifs/Pink_Thumbs_Up.json";
 import interfaceGif from "../../assets/img/gifs/Interface.json";
 import {MobileButton} from "../common/mobile_button/MobileButton";
+import {handleOpenPopup} from "../common/popup/WarningPopup";
 
 export const AboutPage = () => {
     return (
@@ -123,8 +124,8 @@ export const AboutPage = () => {
                     <div className="t2">{data.SeventhBlock.title}</div>
                     <div className="text">{data.SeventhBlock.text_1}<br/>{data.SeventhBlock.text_2}</div>
                     <a href={""}>
-                        <button className="desktop mobile_button">Get Started</button>
-                        <MobileButton accent text={"Get Started"}/>
+                        <button onClick={handleOpenPopup} className="desktop mobile_button">Get Started</button>
+                        <MobileButton onClick={handleOpenPopup}  accent text={"Get Started"}/>
                     </a>
                 </div>
             </div>

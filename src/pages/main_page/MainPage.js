@@ -4,6 +4,7 @@ import data from "../../dataMainPage.json";
 import {Blocks} from "./components/blocks/Blocks";
 import {Budget} from "../common/budget/Budget";
 import {Faq} from "./components/faq/Faq";
+import {WarningPopup} from "../common/popup/WarningPopup";
 
 export const MainPage = () => {
     return (
@@ -11,7 +12,7 @@ export const MainPage = () => {
             <Intro data={data.Intro} links={data.Links}/>
             <Blocks data={data}/>
             <Budget />
-            <Faq data={data.Faq}/>
+            <Faq/>
         </div>
     )
 }

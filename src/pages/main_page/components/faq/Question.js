@@ -22,14 +22,14 @@ export const Question = (props) => {
             .add({
                 targets: `${question}`,
                 duration: 500,
-                height: '10.2rem',
+                height: '13rem',
                 easing: 'spring(1, 80, 10, 0)'
             },)
             .add({
                 targets: `${question} .a`,
                 opacity: '1',
-                duration: 100,
-            }, -200)
+                duration: 200,
+            }, +200)
 
         animationCollapse.current = anime.timeline({
             autoplay: false,
@@ -62,13 +62,13 @@ export const Question = (props) => {
         setIsAnimating(true)
         !isOpen ? animationExpand.current.restart() : animationCollapse.current.restart();
         setOpen(!isOpen)
-        setTimeout(() => setIsAnimating(false), 300)
+        setTimeout(() => setIsAnimating(false), 500)
     }
 
     return (
 
         <div id={"question_" + props.index}
-             className={"question container__relative"}>
+             className={"main_question_block container__relative"}>
             <div className="q" onClick={handleClick}>
                 <div className="text">
                     {props.data.question}
@@ -77,7 +77,7 @@ export const Question = (props) => {
                     <img className="arrow" src={expand}/>
                 </div>
             </div>
-            <div className="a container__absolute">
+            <div className="a">
                 {props.data.answer}
             </div>
 

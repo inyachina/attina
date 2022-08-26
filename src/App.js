@@ -1,12 +1,13 @@
 import {MainPage} from "./pages/main_page/MainPage";
 import {Header} from "./pages/common/header/Header";
 import {Footer} from "./pages/common/footer/Footer";
-import {BrowserRouter, Route, Routes,} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {NotFoundPage} from "./pages/not_found_page/NotFoundPage";
 import {FaqPage} from "./pages/faq_page/FaqPage";
 import {AboutPage} from "./pages/about_page/AboutPage";
 import {PolicyPage} from "./pages/policy_page/PolicyPage";
 import {TermsPage} from "./pages/terms_page/TermsPage";
+import React from "react";
 
 export const App = () => {
 
@@ -23,9 +24,8 @@ export const App = () => {
     //     }
     // })
     return (
-        <>
+        <Router>
             <Header/>
-            <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<MainPage/>}/>
                     <Route path="/about" element={<AboutPage/>}/>
@@ -34,9 +34,7 @@ export const App = () => {
                     <Route path="/privacy" element={<PolicyPage/>}/>
                     <Route path="/terms" element={<TermsPage/>}/>
                 </Routes>
-            </BrowserRouter>
             <Footer/>
-        </>
-    )
-        ;
+        </Router>
+    );
 }

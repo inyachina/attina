@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import './header.scss';
 import logo from '../../../assets/img/logoText.svg'
 import lock from '../../../assets/img/lock.svg'
+import {handleOpenPopup} from "../popup/WarningPopup";
 
 export const MobileMenu = () => {
     const [currentPage, setCurrentPage] = useState();
@@ -13,6 +14,7 @@ export const MobileMenu = () => {
     })
 
     return (<div id="mobile_menu" className="mobile_menu flex_container__column">
+        {/*<img className="main_logo" src={logo}/>*/}
         <div className="flex_container__column">
             <div className="menu_links flex_container__column gap-2rem">
                 <a className={`t1 ${currentPage === "home" && 'active_link'}`} href="/">Home</a>
@@ -38,7 +40,7 @@ export const MobileMenu = () => {
                         </button>
                     </a>
                     <a>
-                        <button className="get_started">Get Started</button>
+                        <button onClick={handleOpenPopup}  className="get_started">Get Started</button>
                     </a>
                 </div>
             </div>

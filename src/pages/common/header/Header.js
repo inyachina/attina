@@ -4,6 +4,7 @@ import logo from '../../../assets/img/logoText.svg';
 import menu from '../../../assets/img/menu.svg';
 import {MobileMenu} from "./MobileMenu";
 import $ from 'jquery';
+import {handleOpenPopup} from "../popup/WarningPopup";
 
 export const Header = () => {
     const [opened, setOpened] = useState(false)
@@ -13,9 +14,11 @@ export const Header = () => {
     const handleClick = () => {
         if (opened) {
             $("#mobile_menu").css({"opacity": 0, "pointerEvents": "none"})
+            // $("#header").css({"position": "initial"})
             $('html, body').css('overflowY', 'auto');;
         } else {
             $("#mobile_menu").css({"opacity": 1, "pointerEvents": "auto"})
+            // $("#header").css({"position": "fixed"})
             $('html, body').css('overflowY', 'hidden')
 
         }
@@ -39,7 +42,7 @@ export const Header = () => {
             </div>
             <div className="flex_container gap-1rem desktop_header">
                 <button className="claim">Claim</button>
-                <button className="get_started">Get started</button>
+                <button onClick={handleOpenPopup}  className="get_started">Get started</button>
             </div>
             <button  onClick={handleClick} className="mobile_menu_button">
                 <img src={menu}/>

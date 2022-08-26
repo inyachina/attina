@@ -2,6 +2,8 @@ import React from "react";
 import "./notFoundPage.scss";
 import manGif from '../../assets/img/gifs/Other_Man_With_Magnifying_Glass.json'
 import {Player} from "@lottiefiles/react-lottie-player";
+import {FixedLeftBlock} from "../common/fixed_block/FixedLeftBlock";
+import data from "../../dataMainPage.json";
 
 export const NotFoundPage = () => {
     return (
