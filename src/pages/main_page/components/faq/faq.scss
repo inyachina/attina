@@ -96,8 +96,18 @@
       }
     }
     .a{
-      max-width: 85%;
+      max-width: 100%;
       font-size: 0.8rem;
     }
+  }
+}
+@media (max-width: 500px) {
+  #faq {
+    padding: 2.6rem 1rem;
+  }
+}
+@media (max-width: 400px) {
+  #faq {
+    padding: 2.6rem 0.5rem;
   }
 }

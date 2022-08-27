@@ -6,62 +6,40 @@ import {SubBlock} from "./SubBlock";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const FixedLeftBlock = ({data, lightTheme}) => {
-    const [lastBlocks, setLastBlocks] = useState([])
-    const [blocks, setBlocks] = useState([])
-    const isLightTheme = lightTheme;
+export const FixedLeftBlock = (props) => {
     const elementRef = useRef(null)
     const q = gsap.utils.selector(elementRef)
 
-    useEffect(() => {
-        const len = data.content.length;
-        setLastBlocks([...data.content.slice(len - 2, len)])
-        setBlocks([...data.content.slice(0, len - 2)])
-        setBlocks([...data.content])
-
-        let tl = gsap.timeline(
-            {
-                scrollTrigger: {
-                    trigger: ".fixed_left_block",
-                    start: "top 0",
-                    end: "bottom top",
-                    pin: '.fixed_block',
-                    // markers: true
-                }
-            }
-        );
-        return () => {
-            setBlocks([])
-            setLastBlocks([])
-        };
-    }, [])
     return (
-
-        <>
-            <div className={"fixed_left_block grid_container__halved " + (isLightTheme ? "light_theme" : "dark_theme")}>
-                <div className="fixed_block fixed  flex_container__column">
-                    <div className="t2">
-                        {data.title}
-                    </div>
-                    <div className="subtitle">
-                        {data.subtitle}
+        <div>
+            <div className="desktop_title">
+                <div className="t2">
+                    {props.data.title}
+                </div>
+                <div className="subtitle">
+                    {props.data.subtitle}
+                </div>
+            </div>
+            <div className={"fixed_left_block  " + (props.lightTheme ? "light_theme" : "dark_theme")}>
+                <div className="wrapper">
+                    <div className="fixed-wrapper">
+                        <div id="fixed_block" className="fixed fixed_block flex_container__column">
+                            <div className="t2">
+                                {props.data.title}
+                            </div>
+                            <div className="subtitle">
+                                {props.data.subtitle}
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div className="sub_blocks flex_container__column">
-                    {blocks.map((item) => (
-                        <SubBlock item={item}/>
-                    ))}
-                </div>
-
-            </div>
-            <div className={"fixed_left_block grid_container__halved " + (isLightTheme ? "light_theme" : "dark_theme")}>
-                <div/>
-                <div className={"sub_blocks flex_container__column"}>
-                    {lastBlocks.map((item) => (
+                    {props.data.content.map((item) => (
                         <SubBlock item={item}/>
                     ))}
                 </div>
             </div>
-        </>
+        </div>
     )
 }

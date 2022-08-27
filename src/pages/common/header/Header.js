@@ -14,11 +14,9 @@ export const Header = () => {
     const handleClick = () => {
         if (opened) {
             $("#mobile_menu").css({"opacity": 0, "pointerEvents": "none"})
-            // $("#header").css({"position": "initial"})
             $('html, body').css('overflowY', 'auto');;
         } else {
             $("#mobile_menu").css({"opacity": 1, "pointerEvents": "auto"})
-            // $("#header").css({"position": "fixed"})
             $('html, body').css('overflowY', 'hidden')
 
         }
@@ -44,7 +42,7 @@ export const Header = () => {
                 <button className="claim">Claim</button>
                 <button onClick={handleOpenPopup}  className="get_started">Get started</button>
             </div>
-            <button  onClick={handleClick} className="mobile_menu_button">
+            <button onClick={handleClick} className="mobile_menu_button">
                 <img src={menu}/>
                 {opened ? "Close" : "Menu"}
             </button>

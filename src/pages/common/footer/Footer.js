@@ -3,6 +3,7 @@ import './footer.scss';
 import logo from '../../../assets/img/logoText.svg';
 import inst from "../../../assets/img/accent_inst.svg"
 import twitter from "../../../assets/img/accent_twitter.svg"
+import {SocialMedia} from "../social_media/SocialMedia";
 
 export const Footer = () => {
     return (
@@ -28,8 +29,8 @@ export const Footer = () => {
                     <div className="footer_socials column flex_container__column">
                         <span>Social media</span>
                         <div className="flex_container gap-1rem">
-                            <a><img src={twitter}/></a>
-                            <a><img src={inst}/></a>
+                            <SocialMedia media="inst"/>
+                            <SocialMedia media="twitter"/>
                         </div>
                     </div>
                 </div>

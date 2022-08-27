@@ -4,13 +4,7 @@ import cross from '../../../assets/img/accent_cross.svg';
 import $ from 'jquery';
 
 export const WarningPopup = () => {
-    const handleClosePopup = () => [
-        $('.warning_popup_container').css(
-            {
-                "opacity": "0",
-                "pointerEvents": "none"
-            })
-    ]
+
     return (
         <div className="warning_popup_container container__centered">
             <div className="warning_popup flex_container__column">
@@ -22,15 +16,24 @@ export const WarningPopup = () => {
                 </div>
                 <button
                     onClick={handleClosePopup}
-                    className="accent_mobile_button">Alright</button>
+                    className="accent_mobile_button">Alright
+                </button>
             </div>
         </div>
     )
 }
-export const handleOpenPopup = () => [
+export const handleOpenPopup = () => {
     $('.warning_popup_container').css(
         {
             "opacity": "1",
             "pointerEvents": "auto"
+        })
+    setTimeout(() => handleClosePopup(), 10000)
+}
+const handleClosePopup = () => [
+    $('.warning_popup_container').css(
+        {
+            "opacity": "0",
+            "pointerEvents": "none"
         })
 ]

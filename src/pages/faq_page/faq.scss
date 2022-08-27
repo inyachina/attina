@@ -123,10 +123,14 @@
       gap: 0.7rem;
 
       .question_block {
-        padding: 2rem 1.7rem;
+        padding: 2rem 1.5rem;
 
         .a {
-          max-width: 90%;
+          max-width: 100%;
+          li{
+            margin-bottom: 0.7rem;
+            max-width: 90%;
+          }
         }
       }
     }
@@ -139,9 +143,12 @@
       }
 
       .left_block {
-        gap: 2.5rem;
         align-items: center;
-        padding: 4rem 2rem;
+        padding: 2rem 0.7rem;
+        gap: 1.5rem;
+        .t2{
+          max-width: 70%;
+        }
       }
 
       div {
@@ -152,7 +159,7 @@
           display: block;
 
           .json_container__absolute {
-            transform: scale(1.2);
+            transform: scale(1.1);
           }
         }
 

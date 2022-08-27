@@ -5,9 +5,10 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {NotFoundPage} from "./pages/not_found_page/NotFoundPage";
 import {FaqPage} from "./pages/faq_page/FaqPage";
 import {AboutPage} from "./pages/about_page/AboutPage";
-import {PolicyPage} from "./pages/policy_page/PolicyPage";
-import {TermsPage} from "./pages/terms_page/TermsPage";
+import {PolicyPage} from "./pages/legal_page/PolicyPage";
+import {TermsPage} from "./pages/legal_page/TermsPage";
 import React from "react";
+import {WarningPopup} from "./pages/common/popup/WarningPopup";
 
 export const App = () => {
 
@@ -26,14 +27,15 @@ export const App = () => {
     return (
         <Router>
             <Header/>
-                <Routes>
-                    <Route path="/" element={<MainPage/>}/>
-                    <Route path="/about" element={<AboutPage/>}/>
-                    <Route path="/faq" element={<FaqPage/>}/>
-                    <Route path="*" element={<NotFoundPage/>}/>
-                    <Route path="/privacy" element={<PolicyPage/>}/>
-                    <Route path="/terms" element={<TermsPage/>}/>
-                </Routes>
+            <WarningPopup/>
+            <Routes>
+                <Route path="/" element={<MainPage/>}/>
+                <Route path="/about" element={<AboutPage/>}/>
+                <Route path="/faq" element={<FaqPage/>}/>
+                <Route path="*" element={<NotFoundPage/>}/>
+                <Route path="/privacy" element={<PolicyPage/>}/>
+                <Route path="/terms" element={<TermsPage/>}/>
+            </Routes>
             <Footer/>
         </Router>
     );

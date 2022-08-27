@@ -4,6 +4,7 @@ import girlGif from '../../../../assets/img/gifs/Working_girl.json'
 import arrow from '../../../../assets/img/arrowBottom.svg'
 import {JsonViewer} from "../../../common/json_viewer/JsonViewer";
 import {SocialMedia} from "../../../common/social_media/SocialMedia";
+import {handleOpenPopup} from "../../../common/popup/WarningPopup";
 
 export const Intro = (props) => {
     return (
@@ -24,8 +25,8 @@ export const Intro = (props) => {
                         {/*<SocialMedia media="youtube"/>*/}
                     </div>
                 </div>
-                <button className="st1">
-                    <img className="intro_arrow" src={arrow}/>
+                <button onClick={handleOpenPopup}  className="st1">
+                    <img  className="intro_arrow" src={arrow}/>
                     {props.data.button}
                 </button>
             </div>
@@ -34,5 +35,5 @@ export const Intro = (props) => {
                     src={girlGif} mirrored/>
             </div>
         </div>
-)
+    )
 }

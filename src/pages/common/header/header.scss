@@ -11,23 +11,19 @@
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  //position: fixed;
+  position: relative;
   transition: top 0.3s;
 
   .main_logo {
     z-index: 1000;
+    margin-right: 9rem;
   }
-
   button {
     border: none;
     border-radius: 116px;
     padding: 0.5rem 0;
     width: 8.5rem;
     transition: 0.1s ease-in-out;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
 

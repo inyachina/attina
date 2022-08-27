@@ -171,9 +171,10 @@
     margin-top: 7.5rem;
     height: auto;
     max-height: initial;
-    gap: 2rem;
+    gap: 0rem;
+    margin-bottom: 4rem;
     display: flex !important;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     img {
       height: 2.6rem;

@@ -4,7 +4,6 @@ import data from "../../dataMainPage.json";
 import {Blocks} from "./components/blocks/Blocks";
 import {Budget} from "../common/budget/Budget";
 import {Faq} from "./components/faq/Faq";
-import {WarningPopup} from "../common/popup/WarningPopup";
 
 export const MainPage = () => {
     return (

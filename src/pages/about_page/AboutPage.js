@@ -64,7 +64,7 @@ export const AboutPage = () => {
                     </div>
                 </div>
             </div>
-            <div id="second_block">
+            <div id="howItWorks">
                 <div className="t2">How it works.</div>
                 <div className="blocks flex_container__column">
                     {data.SecondBlock.map((item, index) => (
@@ -123,7 +123,7 @@ export const AboutPage = () => {
                     </a>
                     <div className="t2">{data.SeventhBlock.title}</div>
                     <div className="text">{data.SeventhBlock.text_1}<br/>{data.SeventhBlock.text_2}</div>
-                    <a href={""}>
+                    <a >
                         <button onClick={handleOpenPopup} className="desktop mobile_button">Get Started</button>
                         <MobileButton onClick={handleOpenPopup}  accent text={"Get Started"}/>
                     </a>

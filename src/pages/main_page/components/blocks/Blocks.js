@@ -109,7 +109,7 @@ export const Blocks = (props) => {
                     <img className="arrow desktop" src={arrowHowItWorks}/>
                 </div>
                 <img className="phone_img" src={phone}/>
-                <MobileButton text={"How it works"}/>
+                <MobileButton href="/about" text={"How it works"}/>
             </div>
             <FixedLeftBlock data={props.data.SixthBlock}/>
             <div className="seventh_block flex_container__column">

@@ -3,8 +3,8 @@ import './budget.scss';
 import data from "../../../dataMainPage.json";
 import tick from "../../../assets/img/budget_tick.svg"
 import mobile_tick from "../../../assets/img/tick.svg"
-import logo from "../../../assets/img/logo.svg";
 import {MobileButton} from "../mobile_button/MobileButton";
+import logo from "../../../assets/img/logo.svg";
 
 export const Budget = ({withoutText}) => {
     const [perMonth, setPerMonth] = useState()
@@ -49,11 +49,7 @@ export const Budget = ({withoutText}) => {
                     </div>
                 </div>
                 <div className="info_mobile mobile container__centered flex_container__column">
-                    <img src={logo}/>
-                    <div className="t3">
-                        Unlike other outdated insurers, you choose the amount of coverage according to your
-                        income. Yep, It’s that easy.
-                    </div>
+
                     <div className="options flex_container__column">
                         {data.BudgetBlock.options.map((option) =>
                             <div className="option flex_container">
@@ -65,7 +61,9 @@ export const Budget = ({withoutText}) => {
                 </div>
             </>
             }
+
             <div className="budget_calculator flex_container__column">
+
                 <div className="title">{data.BudgetBlock.chooseLabel}</div>
                 <div className="buttons flex_container">
                     {data.BudgetBlock.values.map((item, index) => (
@@ -110,10 +108,17 @@ export const Budget = ({withoutText}) => {
                     Get protection
                 </button>
                 {/*<div className="get_protection_container">*/}
-                    <MobileButton text={"Get protection"}/>
+                <MobileButton text={"Get protection"}/>
                 {/*</div>*/}
                 <div className="sub_title">
                     {data.BudgetBlock.endSubTitle}
+                </div>
+            </div>
+            <div className="info_mobile container__centered mobile flex_container__column">
+                <img src={logo}/>
+                <div className="t3">
+                    Unlike other outdated insurers, you choose the amount of coverage according to your
+                    income. Yep, It’s that easy.
                 </div>
             </div>
         </div>

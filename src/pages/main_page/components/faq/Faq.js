@@ -58,7 +58,7 @@ export const Faq = (props) => {
             <a className="desktop" href="/faq">
                 <img src={arrowMoreAnswers}/>
             </a>
-            <MobileButton text="More answers"/>
+            <MobileButton href="/faq" text="More answers"/>
         </div>
     )
 }

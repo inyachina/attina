@@ -1,0 +1,13 @@
+@import "src/assets/styles/variable";
+.legal{
+  margin-top: 6rem;
+
+  *{
+    color: $dark_text;
+  }
+}
+@media(max-width: 900px){
+  .terms {
+    padding: 2rem 0.7rem;
+  }
+}
