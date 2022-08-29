@@ -42,14 +42,19 @@
       justify-content: center;
 
       .stat {
-        font-family: 'Nanum Myeongjo';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.5rem;
-        line-height: 7.5rem;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: $accent_color;
+        div {
+          font-family: 'Nanum Myeongjo';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 5.5rem;
+          line-height: 7.5rem;
+          text-align: center;
+          letter-spacing: -0.02em;
+          color: $accent_color;
+        }
+        .mobile_subtitle{
+          margin-left: 1rem;
+        }
       }
 
       .text {

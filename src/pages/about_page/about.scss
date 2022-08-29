@@ -210,10 +210,13 @@
       }
 
       .sub_title {
-        color: $light_text;
-        font-weight: lighter;
-        .photo_tablet{
+        .founder_img__mobile {
           display: none;
+        }
+
+        .founder_text {
+          color: $light_text;
+          font-weight: lighter;
         }
       }
     }
@@ -230,10 +233,11 @@
   }
 
   #seventh_block {
-    .json_container__absolute{
+    .json_container__absolute {
       transform: scale(1);
       top: -3rem;
     }
+
     .info {
       background: $accent_color;
       border-radius: 30px;

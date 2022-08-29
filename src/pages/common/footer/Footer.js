@@ -1,8 +1,6 @@
 import React from "react";
 import './footer.scss';
 import logo from '../../../assets/img/logoText.svg';
-import inst from "../../../assets/img/accent_inst.svg"
-import twitter from "../../../assets/img/accent_twitter.svg"
 import {SocialMedia} from "../social_media/SocialMedia";
 
 export const Footer = () => {

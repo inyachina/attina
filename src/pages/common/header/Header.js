@@ -8,9 +8,7 @@ import {handleOpenPopup} from "../popup/WarningPopup";
 
 export const Header = () => {
     const [opened, setOpened] = useState(false)
-    useState(() => {
 
-    })
     const handleClick = () => {
         if (opened) {
             $("#mobile_menu").css({"opacity": 0, "pointerEvents": "none"})

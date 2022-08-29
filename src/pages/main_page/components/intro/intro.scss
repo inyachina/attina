@@ -12,7 +12,7 @@
 
     .content {
       color: #8A7997;
-      max-width: 65%;
+      max-width: 78%;
     }
 
     .mobile_reverse_column {
@@ -67,11 +67,14 @@
 @media (min-width: 600px) and (max-width: 800px) {
   #intro {
     margin: 6.5rem 2rem 8.5rem;
+
     .info {
       .content {
-        font-size: 0.8rem;
+        text-align: justify;
+        max-width: 95%;
       }
     }
+
     .intro_json {
       margin-top: -5vw;
     }
@@ -83,17 +86,21 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: start;
-    min-height: 90vh;
+    min-height: 80vh;
     margin: 0;
-    padding-top: 10vh;
+    padding-top: 4rem;
 
     .info {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       gap: 1.5rem;
 
       .t1 {
         text-align: center;
         padding: 0 2rem;
+      }
+
+      .links {
+        margin-bottom: 1rem;
       }
 
       .mobile_reverse_column {
@@ -103,7 +110,7 @@
 
       .content {
         text-align: center;
-        max-width: 90%;
+        max-width: 100% !important;
         color: $dark_text;
       }
 
@@ -114,29 +121,40 @@
     }
 
     .intro_json {
-      min-height: 20vh;
+      .json_container__relative {
+        .json_container__absolute {
+          transform: scale(1.2);
+        }
+      }
     }
   }
 }
 
 @media (max-width: 470px) {
   #intro {
+        .t1 {
+          max-width: 90%;
+        }
     .intro_json {
       margin-top: -15vw;
-      .json_container__absolute{
+
+      .json_container__absolute {
         transform: scale(1.5);
       }
     }
   }
 }
+
 @media (max-width: 400px) {
   #intro {
-    .info .t1{
+    .info .t1 {
       padding: 0 1rem;
     }
+
     .intro_json {
       margin-top: -15vw;
-      .json_container__absolute{
+
+      .json_container__absolute {
         transform: scale(1.3);
       }
     }

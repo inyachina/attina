@@ -10,9 +10,6 @@
     "content": "Finally, fair insurance for internet income. Get protection for your earnings from social media and crypto hustle with instant payouts and no hidden fees.",
     "button": "Get started"
   },
-  "FirstBlock": {
-    "content": "It's like your second income in case of troubles with your account, blocking, hacking or banning, reputation risks, phone theft or health problems."
-  },
   "SecondBlock": {
     "facts": [
       {
@@ -20,8 +17,8 @@
         "text": "U.S. adults have had instagram accounts hacked"
       },
       {
-        "large_text": "true",
-        "stat": "$14 bln",
+        "extra": " bln",
+        "stat": "$14",
         "text": "Criminals have earned in the cryptocurrency market in 2021"
       },
       {
@@ -34,7 +31,7 @@
     "options": [
       {
         "bold_text": "Multi-platform support.",
-        "text": "Insure any social media or crypto wallet."
+        "text": "Insure any social media or crypto wallet (soon)."
       },
       {
         "bold_text": "Clear, fair prices.",

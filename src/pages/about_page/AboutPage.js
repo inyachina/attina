@@ -4,7 +4,6 @@ import triangle_1 from '../../assets/img/triangle_1.svg'
 import triangle_2 from '../../assets/img/triangle_2.svg'
 import triangle_3 from '../../assets/img/triangle_3.svg'
 import Alexander from '../../assets/img/Alexander.png'
-import AlexanderCircle from '../../assets/img/AlexanderCircle.png'
 import commas from '../../assets/img/commas.svg'
 import "./about.scss";
 import "./aboutAdaptive.scss";
@@ -48,7 +47,7 @@ export const AboutPage = () => {
             </div>
             <div id={"first_block"} className="flex_container__column">
                 <div className="main_block flex_container__column">
-                    <img  src={logo}/>
+                    <img src={logo}/>
                     <div className="t3 content">
                         {data.FirstBlock.content}
                     </div>
@@ -96,16 +95,18 @@ export const AboutPage = () => {
                 </div>
             </div>
             <div id="fourth_block">
-                <img className="founder_img desktop" src={Alexander}/>
+                <img className="founder_img" src={Alexander}/>
                 <img className="commas_img" src={commas}/>
                 <div className="content flex_container__column">
                     <div className="t3">
                         {data.FourthBlock}
                     </div>
                     <div className="sub_title flex_container">
-                        <img className="photo_tablet" src={AlexanderCircle}/>
-                        Alexander Khopersky<br/>
-                        Founder&CEO Attina
+                        <img className="founder_img__mobile" src={Alexander}/>
+                        <div className="founder_text">
+                            Alexander Khopersky<br/>
+                            Founder&CEO, Attina
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,9 +124,9 @@ export const AboutPage = () => {
                     </a>
                     <div className="t2">{data.SeventhBlock.title}</div>
                     <div className="text">{data.SeventhBlock.text_1}<br/>{data.SeventhBlock.text_2}</div>
-                    <a >
+                    <a>
                         <button onClick={handleOpenPopup} className="desktop mobile_button">Get Started</button>
-                        <MobileButton onClick={handleOpenPopup}  accent text={"Get Started"}/>
+                        <MobileButton onClick={handleOpenPopup} accent text={"Get Started"}/>
                     </a>
                 </div>
             </div>

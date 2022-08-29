@@ -29,7 +29,7 @@
 
 
   .q {
-    margin-top: 1.4rem;
+    padding-top: 1.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,18 +96,13 @@
       }
     }
     .a{
-      max-width: 100%;
+      max-width: 82%;
       font-size: 0.8rem;
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #faq {
     padding: 2.6rem 1rem;
-  }
-}
-@media (max-width: 400px) {
-  #faq {
-    padding: 2.6rem 0.5rem;
   }
 }

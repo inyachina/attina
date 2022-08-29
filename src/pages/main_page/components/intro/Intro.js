@@ -15,18 +15,26 @@ export const Intro = (props) => {
                     freedom, protect it.
                 </div>
                 <div className="mobile_reverse_column">
-                    <div className="st1 content">
-                        {props.data.content}
+                    <div className="content">
+                        Finally, fair insurance for internet income. Get
+                        <br className="mobile"/>
+                        protection for your earnings from social media
+                        <br className="mobile"/>
+                        and crypto hustle with instant payouts and no
+                        <br className="mobile"/>
+                        hidden fees.
                     </div>
-                    <div className="links flex_container">
+                    <div className="desktop links flex_container">
+                        <SocialMedia bg="#D09EF8" media="inst"/>
+                        <SocialMedia bg="#D09EF8" media="twitter"/>
+                    </div>
+                    <div className="mobile links flex_container">
                         <SocialMedia media="inst"/>
-                        {/*<SocialMedia media="tiktok"/>*/}
                         <SocialMedia media="twitter"/>
-                        {/*<SocialMedia media="youtube"/>*/}
                     </div>
                 </div>
                 <button onClick={handleOpenPopup}  className="st1">
-                    <img  className="intro_arrow" src={arrow}/>
+                    {/*<img  className="intro_arrow" src={arrow}/>*/}
                     {props.data.button}
                 </button>
             </div>

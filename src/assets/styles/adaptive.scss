@@ -54,7 +54,25 @@
 
 @media (min-width: 600px) and (max-width: 1200px) {
   html, body {
-    font-size: 13px ;
+    font-size: 13px!important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  html, body {
+    font-size: 16px!important;
+  }
+}
+
+@media(min-width: 400px) and (max-width: 500px) {
+  html, body {
+    font-size: 15px!important;
+  }
+}
+
+@media(min-width: 300px) and (max-width: 400px) {
+  html, body {
+    font-size: 14px!important;
   }
 }
 
@@ -84,13 +102,13 @@
 
 @media (max-width: 800px) {
   .t1 {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
   .t2 {
-    font-size: 1.8rem;
+    font-size: 1.66rem;
   }
   .t3 {
-    font-size: 1.6rem;
+    font-size: 1.66rem;
   }
 }
 

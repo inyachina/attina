@@ -97,7 +97,7 @@
     }
 
     #howItWorks {
-      margin: 8.2rem 0 0 0;
+      margin: 4.2rem 0 0 0;
 
       .t2 {
         text-align: center;
@@ -115,6 +115,7 @@
           .title {
             font-size: 1rem;
             gap: 0.7rem;
+            max-width: 80%;
 
             .number {
               min-height: 2rem;
@@ -136,8 +137,12 @@
 
     #third_block .left_block {
       .t2 {
-        font-size: 2.5rem!important;
-        max-width: 93%!important;
+        font-size: 2.5rem !important;
+        max-width: 93% !important;
+      }
+
+      .json_container__absolute {
+        transform: scale(1.4) !important;
       }
     }
 
@@ -145,7 +150,7 @@
     #fifth_block {
       margin-top: -1rem;
       border-radius: 20px;
-      padding: 2rem 1.7rem!important;
+      padding: 2rem 1.7rem !important;
 
       .t3 {
         color: $light_text;
@@ -155,8 +160,10 @@
     #seventh_block {
       display: flex;
       flex-direction: column;
-      margin-top: 4rem;
-
+      margin-top: 1rem;
+      .json_container__relative{
+        display: none;
+      }
       .info {
         background: transparent;
         border-radius: 20px;
@@ -178,8 +185,8 @@
 
         .text {
           color: $dark_text;
-          max-width: 85%;
-          margin-bottom: 2.6rem;
+          max-width: 95%!important;
+          margin: 0 auto  2.6rem auto;
         }
 
         button {
@@ -263,7 +270,7 @@
 @media (max-width: 750px) {
   #about_page #fourth_block {
     border-radius: 20px;
-    padding: 3rem 1.7rem;
+    padding: 4rem 1.7rem 0 1.7rem;
 
 
     .founder_img {
@@ -271,7 +278,9 @@
     }
 
     .commas_img {
-      display: none;
+      height: 2rem;
+      top: 2.7rem;
+      left: 1rem;
     }
 
     .content {
@@ -280,9 +289,17 @@
 
       .sub_title {
         gap: 1rem;
-
-        .photo_tablet {
-          display: block;
+        margin-right: 0;
+        position: relative;
+        .founder_img__mobile {
+          display: flex;
+          height: 12rem;
+          margin-left: -2rem;
+          margin-top: -2rem;
+        }
+        .founder_text{
+          position: absolute;
+          right: 1rem;
         }
       }
     }
