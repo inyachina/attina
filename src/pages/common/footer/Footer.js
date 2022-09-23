@@ -15,7 +15,6 @@ export const Footer = () => {
                     <div className="column flex_container__column">
                         <span>Company</span>
                         <a href="/about">About us</a>
-                        <a>How it works</a>
                         <a href="/faq">FAQ</a>
                     </div>
 

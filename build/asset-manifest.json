@@ -1,17 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.a7e31437.css",
-    "main.js": "./static/js/main.3fdf98e9.js",
-    "static/media/phone_gif.svg": "./static/media/phone_gif.0c097d9d8003c2fe1dee.svg",
+    "main.css": "./static/css/main.a3865df5.css",
+    "main.js": "./static/js/main.9cdab1de.js",
     "static/media/Alexander.png": "./static/media/Alexander.84e99db6e7e115d0c585.png",
-    "static/media/image 42.png": "./static/media/image 42.175e3486dc0e3c1e6f03.png",
-    "static/media/image 43.png": "./static/media/image 43.5431710f970d67320eb8.png",
     "static/media/phone.png": "./static/media/phone.565403904615c4c8a254.png",
-    "static/media/white_metamask.svg": "./static/media/white_metamask.48568bfdb86071e625e1.svg",
-    "static/media/metamask.svg": "./static/media/metamask.39042f23bcae0f22e3294bd056098d57.svg",
-    "static/media/accent_inst.svg": "./static/media/accent_inst.3b2482f2f146bbda2cabdfeb2d9972c5.svg",
-    "static/media/ins.svg": "./static/media/ins.e740b9a82ec00d1b4211.svg",
-    "static/media/white_inst.svg": "./static/media/white_inst.c33030f481f6d443c3143a2518101efa.svg",
     "static/media/arrowGetProtection.svg": "./static/media/arrowGetProtection.3efa5866f8a00f27a3d6f6b6417a3f48.svg",
     "static/media/logoText.svg": "./static/media/logoText.bd73600354245b5f2b9630cb186673f5.svg",
     "static/media/arrowMoreAnswers.svg": "./static/media/arrowMoreAnswers.b39a915525b6a07708306c6bd67fef42.svg",
@@ -20,22 +12,13 @@
     "static/media/arrowHowItWorks.svg": "./static/media/arrowHowItWorks.a9042995e3c6ef156b163dbb06cd1274.svg",
     "static/media/logo.svg": "./static/media/logo.be4d3246f243e74409297e4c61e1d295.svg",
     "static/media/white_logo.svg": "./static/media/white_logo.75ca0b254a3f4ff3c3a03003405e4f9d.svg",
-    "static/media/inst.svg": "./static/media/inst.c6686cfc8735c4d143ee4fb17d1a85fb.svg",
     "static/media/commas.svg": "./static/media/commas.ed05fe8924cc7470cda3fabec00699d0.svg",
-    "static/media/white_twitter.svg": "./static/media/white_twitter.a9cf718705b16de1f746cd2ac403e64c.svg",
-    "static/media/accent_twitter.svg": "./static/media/accent_twitter.9fb25ec9781dc5e4c3c6d999fe8d3410.svg",
-    "static/media/tiktok.svg": "./static/media/tiktok.2fc8e504c8d1a2052488d7634c4ca60c.svg",
-    "static/media/youtube.svg": "./static/media/youtube.09524fc7aac82f8867a3d2d08cff38ba.svg",
-    "static/media/white_tiktok.svg": "./static/media/white_tiktok.f9231c9c5f2d73c220c20a58fbf119cf.svg",
-    "static/media/twitter.svg": "./static/media/twitter.857d52f12d81c7e68486a8c1fef858ae.svg",
-    "static/media/white_youtube.svg": "./static/media/white_youtube.d2fc420240089a5d755a8fabf1c3f080.svg",
-    "static/media/Vectorlogo.svg": "./static/media/Vectorlogo.a472fedfe62e6940f704.svg",
     "index.html": "./index.html",
     "static/media/arrowAccent.svg": "./static/media/arrowAccent.dade026c2d7335addb18cc09ca3018aa.svg",
     "static/media/arrowMoreQuestions.svg": "./static/media/arrowMoreQuestions.bd1098de84e903ffff5130ac3d9330d5.svg",
     "static/media/arrowBottom.svg": "./static/media/arrowBottom.ceded1aec241ce01984e08c87149b9e8.svg",
     "static/media/expand.svg": "./static/media/expand.f9e58615c41899f310449c11f81476b2.svg",
-    "static/media/lock.svg": "./static/media/lock.b264e860ba47f6c79da401277363a86f.svg",
+    "static/media/lock.svg": "./static/media/lock.b264e860ba47f6c79da4.svg",
     "static/media/tick.svg": "./static/media/tick.6ae522457c089405d03cf7b2f5e55dd5.svg",
     "static/media/budget_tick.svg": "./static/media/budget_tick.9408bd61f02093388fcf4cdcd38dad97.svg",
     "static/media/menu.svg": "./static/media/menu.636aa729e45e2716227becdf8c5be03a.svg",
@@ -45,11 +28,11 @@
     "static/media/triangle_1.svg": "./static/media/triangle_1.f24daaa6e2dffbf6e0cb39e854fb4cd4.svg",
     "static/media/triangle_3.svg": "./static/media/triangle_3.941bf4d8c5d3dcb97c91542988586dcf.svg",
     "static/media/cross.svg": "./static/media/cross.f7be7dd4ba898f4e5933.svg",
-    "main.a7e31437.css.map": "./static/css/main.a7e31437.css.map",
-    "main.3fdf98e9.js.map": "./static/js/main.3fdf98e9.js.map"
+    "main.a3865df5.css.map": "./static/css/main.a3865df5.css.map",
+    "main.9cdab1de.js.map": "./static/js/main.9cdab1de.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7e31437.css",
-    "static/js/main.3fdf98e9.js"
+    "static/css/main.a3865df5.css",
+    "static/js/main.9cdab1de.js"
   ]
 }

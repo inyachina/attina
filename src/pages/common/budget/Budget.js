@@ -5,6 +5,7 @@ import tick from "../../../assets/img/budget_tick.svg"
 import mobile_tick from "../../../assets/img/tick.svg"
 import {MobileButton} from "../mobile_button/MobileButton";
 import logo from "../../../assets/img/logo.svg";
+import {handleOpenPopup} from "../popup/WarningPopup";
 
 export const Budget = ({withoutText}) => {
     const [perMonth, setPerMonth] = useState()
@@ -104,11 +105,11 @@ export const Budget = ({withoutText}) => {
                         </div>
                     </div>
                 </div>
-                <button className="desktop">
-                    Get protection
+                <button onClick={handleOpenPopup} className="desktop">
+                    Get started
                 </button>
                 {/*<div className="get_protection_container">*/}
-                <MobileButton text={"Get protection"}/>
+                <MobileButton onClick={handleOpenPopup} text={"Get started"}/>
                 {/*</div>*/}
                 <div className="sub_title">
                     {data.BudgetBlock.endSubTitle}

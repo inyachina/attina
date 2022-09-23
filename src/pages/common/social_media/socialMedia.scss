@@ -2,15 +2,32 @@
 
 .social_media {
   background: $accent_color;
-  height: 2.3rem;
-  width: 2.3rem;
+  min-height: 2.3rem;
+  min-width: 2.3rem;
+  max-height: 2.3rem;
+  max-width: 2.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 
   svg {
-    height: 1.5rem;
-    width: 1.5rem;
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+  }
+}
+
+.social_media_large {
+  border-radius: 100px;
+  max-width: initial;
+  min-width: 6rem;
+
+  svg {
+    max-height: 0.8rem;
+    min-height: 0.8rem;
+    max-width: initial;
+    width: auto;
   }
 }

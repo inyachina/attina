@@ -20,25 +20,48 @@
     background: $bg_color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 3rem;
-    .cross{
+
+    .cross {
       position: absolute;
       top: 1.5rem;
       right: 1.5rem;
       cursor: pointer;
     }
-    .text{
+
+    .text {
       text-align: center;
       margin: auto;
       font-size: 1.5rem;
       max-width: 60%;
       color: $accent_color;
     }
-    button{
+
+    button {
       width: 12rem;
       height: 3.5rem;
       border-radius: 100px;
       border: none;
       margin: auto;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .warning_popup_container .warning_popup {
+    height: 11rem;
+
+    .cross {
+      height: 1.3rem;
+    }
+
+    .text {
+      font-size: 1.3rem;
+      max-width: 80%;
+    }
+
+    button {
+      width: 11rem;
+      border-radius: 15px;
     }
   }
 }

@@ -12,6 +12,7 @@ import {FixedLeftBlock} from "../../../common/fixed_block/FixedLeftBlock";
 import {JsonViewer} from "../../../common/json_viewer/JsonViewer";
 import {MobileButton} from "../../../common/mobile_button/MobileButton";
 import {SocialMedia} from "../../../common/social_media/SocialMedia";
+import {handleOpenPopup} from "../../../common/popup/WarningPopup";
 
 export const Blocks = (props) => {
     return (
@@ -25,8 +26,8 @@ export const Blocks = (props) => {
                     hacking or banning, reputational risks, phone theft <br className="mobile"/>
                     or health problems. <br className="mobile"/>
                 </div>
-                <img className="desktop" src={arrowWhiteLearnMore}/>
-                <MobileButton text="Learn more"/>
+                <img onClick={()=> window.location.href='/about'} className="desktop" src={arrowWhiteLearnMore}/>
+                <MobileButton onClick={()=> window.location.href='/about'}  text="Learn more"/>
             </div>
             <div className="second_block">
                 <div className="t2 title">
@@ -125,7 +126,7 @@ export const Blocks = (props) => {
                     {props.data.SevenBlock.content}
                 </div>
                 <img className="desktop" src={arrowGetProtection}/>
-                <MobileButton text={"Get protection"}/>
+                <MobileButton onClick={handleOpenPopup}  text={"Get started"}/>
             </div>
         </>)
 }
